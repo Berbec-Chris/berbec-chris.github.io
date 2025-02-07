@@ -1,0 +1,64 @@
+*{
+    overflow: hidden;
+}
+ body
+ {
+     margin: 0;
+ }
+ p
+ {
+     position: absolute;
+     width: 400px;
+     height: 600px;
+     font-size: 48px;
+     color: white;
+     top: 245px;
+     left: 840px;
+     text-align: left;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+ }
+ canvas
+ {
+     border: 0px;
+     margin: 16px;
+ }
+ .center
+ {
+     position: absolute;
+     top:350px;
+     left: 740px;
+     transform: translate(-50%, -50%);
+ }
+ input[type="checkbox"]
+ {
+     position: relative;
+     width: 80px;
+     height: 50px;
+     -webkit-appearance: none;
+     background: #d5e9e6;
+     outline: none;
+     border-radius: 25px;
+     transition: .1618s;
+ }
+ input:checked[type="checkbox"]
+ {
+     background: #708238;
+ }
+ input[type="checkbox"]:before
+ {
+     content: '';
+     position: absolute;
+     width: 32px;
+     height: 32px;
+     border-radius: 16px;
+     top: 9px;
+     left: 9px;
+     background: #f7f7ef;
+     transform: scale(1.1);
+     transition: .1618s;
+ }
+ input:checked[type="checkbox"]:before
+ {
+     left: 40px;
+ }
