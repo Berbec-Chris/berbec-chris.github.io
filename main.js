@@ -34,7 +34,7 @@ We also by default activate function drawS1() to avoid starting with a blank can
 Also, a central, white square space bordered by a turquoise line to recieve the html 
 text are independently from variable i drawn in the center of the canvas*/
 function drawS1(){
-  ctxt.fillStyle = "#331832";
+  ctxt.fillStyle = "#d5e9e6";
   ctxt.fillRect(0,0, canvas.width, canvas.height);
   for (let i=0; i < 5; i++){
     let x = (rX*i);
