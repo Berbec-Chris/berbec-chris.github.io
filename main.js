@@ -65,27 +65,27 @@ drawS1();
 is the elegant way I manage to reposition the turquoise background pattern by altering     x = (rX*i) to x = (rX*(4-i)),
 thus inverting the flow of index i upon its multiplier constant rX. Simple and elegant solution, I find. */
 function drawS2(){
-  ctxt.fillStyle = "#331832";
+  ctxt.fillStyle = "#d5e9e6";
   ctxt.fillRect(0,0, canvas.width, canvas.height);
   for (let i=0; i < 5; i++){
     let x = (rX*(4-i));
     let y = (rY*i);
 
-    ctxt.fillStyle = "white";
+    ctxt.fillStyle = "#f7f7ef";
     ctxt.fillRect(x, y, rW, rH);
-    ctxt.fillStyle = "#331832";
+    ctxt.fillStyle = "#d5e9e6";
     ctxt.fillRect(rX*2, rY*2, rW, rH);
     ctxt.beginPath();
     ctxt.rect(rX*2, rY*2, rW, rH);
-    ctxt.strokeStyle = "white";
+    ctxt.strokeStyle = "#f7f7ef";
     ctxt.stroke();
     ctxt.beginPath();
     ctxt.rect(rX, rY*3, rW, rH);
-    ctxt.strokeStyle = "#331832";
+    ctxt.strokeStyle = "#d5e9e6";
     ctxt.stroke();
     ctxt.beginPath();
     ctxt.rect(rX*3, rY, rW, rH);
-    ctxt.strokeStyle = "#331832";
+    ctxt.strokeStyle = "#d5e9e6";
     ctxt.stroke();
   }
 }
