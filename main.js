@@ -40,21 +40,21 @@ function drawS1(){
     let x = (rX*i);
     let y = (rY*i);
 
-    ctxt.fillStyle = "white";
+    ctxt.fillStyle = "#f7f7ef";
     ctxt.fillRect(x, y, rW, rH);
-    ctxt.fillStyle = "#331832";
+    ctxt.fillStyle = "#d5e9e6";
     ctxt.fillRect(rX*2, rY*2, rW, rH);
     ctxt.beginPath();
     ctxt.rect(rX*2, rY*2, rW, rH);
-    ctxt.strokeStyle = "white";
+    ctxt.strokeStyle = "#f7f7ef";
     ctxt.stroke();
     ctxt.beginPath();
     ctxt.rect(rX*1, rY*1, rW, rH);
-    ctxt.strokeStyle = "#331832";
+    ctxt.strokeStyle = "#d5e9e6";
     ctxt.stroke();
     ctxt.beginPath();
     ctxt.rect(rX*3, rY*3, rW, rH);
-    ctxt.strokeStyle = "#331832";
+    ctxt.strokeStyle = "#d5e9e6";
     ctxt.stroke();
 
   }
