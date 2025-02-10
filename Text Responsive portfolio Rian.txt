@@ -1,15 +1,15 @@
 ========== HEADER ==========
 .nav__logo-circle
-R
+C
 
 .nav__logo-name
-Rian Lot.
+Chris Berbec
 
 .nav__title
 Menu
 
 .nav__name
-Rian
+Chris
 
 .nav__link
 Home - About Me - Projects - Contact Me
