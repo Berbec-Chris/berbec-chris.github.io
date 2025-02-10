@@ -195,7 +195,7 @@ transition: box-shadow .4s;
   color: var(--title-color);
 }
 
-.nav__logo-cirvle,
+.nav__logo-circle,
 .nav__toggle{
   width: 32px;
   height: 32px;
@@ -204,9 +204,43 @@ transition: box-shadow .4s;
   display: grid;
   place-items: center;
 }
+
+.nav__logo-circle{
+  border-radius: 50%;
+}
+.nav__toggle{
+  font-size: 1.25rem;
+  cursor: pointer;
+}
 /* Navigation for mobile devices */
 
+@media screen and (min-width: 1150px){
+  .nav__menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-color: hsla(0, 0, 0, .75);
+    width: 100%;
+    padding-block: 3.5rem 5rem;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    transition: top .4;
+  }
+}
 
+.nav__title,
+.nav__name,
+.nav__close{
+  color: var(--white-color);
+}
+
+nav.nav__title{
+  display: block;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 3.5rem;
+
+}
 /* Show menu */
 
 
