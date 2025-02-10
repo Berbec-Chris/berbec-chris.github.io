@@ -6,19 +6,15 @@ const navClose = document.getElementById('nav-close');
 /*Menu Show */
 if(navToggle){
     navToggle.addEventListener('click', () =>{
-        if(navMenu) {
-            navMenu.classList.add('show-menu');
-        }
+        navMenu.classList.add('show-menu');
     })
-}
+};
 /* Menu Hidden*/
 if(navClose){
     navClose.addEventListener('click', () =>{
-        if(navMenu) {
-            navMenu.classList.remove('show-menu');
-        }
+        navMenu.classList.remove('show-menu');
     })
-}
+};
 
 /*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll('.nav__link')
