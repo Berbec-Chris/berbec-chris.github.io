@@ -234,7 +234,7 @@ transition: box-shadow .4s;
   color: var(--white-color);
 }
 
-nav.nav__title{
+.nav__title{
   display: block;
   font-size: var(--small-font-size);
   font-weight: var(--font-semi-bold);
