@@ -1,7 +1,7 @@
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
-    navClose = document.getElementById('nav-close');
+    navClose = document.getElementById('nav-close'),
 /*Menu Show */
 if(navToggle){
     navToggle.addEventListener('click', () =>{
