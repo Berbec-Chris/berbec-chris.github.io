@@ -337,6 +337,8 @@ home__prefill{
 
 .home__img{
   position: relative;
+  display: block;
+  width: 100%;
   z-index: 10;
 }
 
