@@ -443,8 +443,26 @@ transition: box-shadow .4s;
   overflow: hidden;
   transition: background-color .4s;
 }
-/* Animate scroll icon */
 
+.home__scroll-box i{
+  animation: scroll-down 3s infinite;
+}
+
+/* Animate scroll icon */
+@keyframes scroll-down {
+  0%{
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+  50%{
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(.6rem);
+    opacity: 0;
+  }
+}
 
 /*=============== BUTTON ===============*/
 
