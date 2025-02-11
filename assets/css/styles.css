@@ -422,12 +422,6 @@ transition: box-shadow .4s;
             hsla(14, 98%, 50%, 0));
 }
 
-.home__scroll{
-  display: block;
-  width: max-content;
-  margin: 0 auto;
-}
-
 .home__scroll-text{
   display: none;
 }
@@ -447,6 +441,12 @@ transition: box-shadow .4s;
 
 .home__scroll-box i{
   animation: scroll-down 3s infinite;
+}
+
+.home__scroll{
+  display: block;
+  width: max-content;
+  margin: 0 auto;
 }
 
 /* Animate scroll icon */
