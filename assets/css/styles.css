@@ -328,7 +328,7 @@ transition: box-shadow .4s;
 
 .home__prefill{
   position: relative;
-  justify-self: center;
+  justify-self: right;
 }
 
 .home__image{
