@@ -345,7 +345,7 @@ transition: box-shadow .4s;
 
 .home__shadow{
   width: 220px;
-  height: home__img;
+  height: auto;
   background-color: var(--container-color);
   position: absolute;
   bottom: -0.75rem;
