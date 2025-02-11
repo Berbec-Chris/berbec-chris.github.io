@@ -326,7 +326,7 @@ transition: box-shadow .4s;
   text-align: center;
 }
 
-home__prefill{
+.home__prefill{
   position: relative;
   justify-self: center;
 }
@@ -370,7 +370,7 @@ home__prefill{
   bottom: -0.5rem;
 }
 
-.home__prefil,
+.home__prefill,
 .geometric-box{
   top: 2.5rem;
   left: -0.7rem;
