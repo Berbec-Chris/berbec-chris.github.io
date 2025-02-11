@@ -372,7 +372,8 @@ home__prefill{
   bottom: -0.5rem;
 }
 
-.home__prefil .geometric-box{
+.home__prefil,
+.geometric-box{
   top: 2.5rem;
   left: -0.7rem;
   z-index: 10;
