@@ -411,6 +411,22 @@ transition: box-shadow .4s;
   color: var(--title-color);
   margin-bottom: 1.5rem;
 }
+
+.home__description b{
+  background: linear-gradient(90deg,
+            hsla(14, 98%, 50%, .3),
+            hsla(14, 98%, 50%, 0));
+}
+
+.home__scroll{
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.home__scroll-text{
+  display: none;
+}
 /* Animate scroll icon */
 
 
