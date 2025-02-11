@@ -346,7 +346,7 @@ home__prefill{
   background-color: var(--container-color);
   position: absolute;
   bottom: -0.75rem;
-  right: -0.75em;
+  right: -0.75rem;
   border: 4px solid var(--black-color);
   z-index: 5;
   transition: background-color .4s;
