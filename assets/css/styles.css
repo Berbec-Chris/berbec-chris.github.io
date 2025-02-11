@@ -202,7 +202,7 @@ transition: box-shadow .4s;
   background-color: var(--black-color);
   color: var(--white-color);
   display: grid;
-  place-items: center;
+  place-items: justify left;
 }
 
 .nav__logo-circle{
