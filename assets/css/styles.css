@@ -440,10 +440,6 @@ transition: box-shadow .4s;
   transition: background-color .4s;
 }
 
-.ri-arrow-down-s-line {
-
-}
-
 .home__scroll-box i{
   font-size: 10px; /* Adjust size as needed */
   color: var(--white-color); /* Adjust color as needed */
