@@ -330,11 +330,12 @@ transition: box-shadow .4s;
 
 .home__prefill{
   position: relative;
-  justify-self: right;
+  justify-self: center;
+  margin-right: 35%;
 }
 
 .home__image{
-  width: 220px;
+  width: 400px;
   position: relative;
 }
 
@@ -346,7 +347,7 @@ transition: box-shadow .4s;
 
 .home__shadow{
   width: 100%;
-  height: 80%;
+  height: 89%;
   background-color: var(--container-color);
   position: absolute;
   bottom: 3rem;
