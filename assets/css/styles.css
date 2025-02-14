@@ -330,8 +330,8 @@ transition: box-shadow .4s;
 
 .home__prefill{
   position: relative;
-  justify-self: center;
-  margin-right: 35%;
+  justify-self: right;
+  margin-right: 10%;
 }
 
 .home__image{
@@ -442,6 +442,7 @@ transition: box-shadow .4s;
 
 .home__scroll-box i{
   animation: scroll-down 3s infinite;
+  color: var(--white-color); /* Ensure the arrow is white */
 }
 
 .home__scroll{
