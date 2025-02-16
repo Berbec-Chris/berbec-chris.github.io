@@ -248,7 +248,7 @@ transition: box-shadow .4s;
   font-size: var(--h2-font-size);
 }
 
-.nav__name::after
+.nav__name::after,
 .nav__name::before{
   content: '';
   width: 40px;
