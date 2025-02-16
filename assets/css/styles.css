@@ -222,9 +222,9 @@ transition: box-shadow .4s;
     border-color: hsla(0, 0%, 0%, 0.75);
     width: 100%;
     padding-block: 1.8rem 5rem;
-    text-align: center;
-    backdrop-filter: blur(8px);
-    transition: top .4s;
+    text-align: right;
+    backdrop-filter: blur(8px), dark(0.7);
+    transition: right .4s;
   }
 }
 
