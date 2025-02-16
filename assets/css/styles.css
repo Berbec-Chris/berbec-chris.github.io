@@ -214,7 +214,7 @@ transition: box-shadow .4s;
 }
 /* Navigation for mobile devices */
 
-@media screen and (max-width: 1150px){
+@media screen and (max-width: 1920px){
   .nav__menu{
     position: fixed;
     top: -100%;
