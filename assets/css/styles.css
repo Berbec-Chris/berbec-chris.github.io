@@ -223,7 +223,7 @@ transition: box-shadow .4s;
     width: 100%;
     padding-block: 1.8rem 5rem;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
     transition: top .4s;
   }
 }
@@ -272,7 +272,7 @@ transition: box-shadow .4s;
 
 .nav__link{
   position: relative;
-  color: var(--text-color-light);
+  color: var(--white-color);
   font-size: var(--h3-font-size);
   font-weight: var(--font-semi-bold);
   transition: color .3s;
