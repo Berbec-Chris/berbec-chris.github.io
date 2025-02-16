@@ -214,7 +214,7 @@ transition: box-shadow .4s;
 }
 /* Navigation for mobile devices */
 
-@media screen and (min-width: 1150px){
+@media screen and (max-width: 1150px){
   .nav__menu{
     position: fixed;
     top: -100%;
@@ -225,6 +225,16 @@ transition: box-shadow .4s;
     text-align: center;
     backdrop-filter: blur(8px);
     transition: top .4s;
+  }
+
+  /* Set the width of the page to a minimum threshold for mobile devices */
+  body {
+    min-width: 720px; /* Adjust this value as needed */
+  }
+
+  img {
+    width: 100%;
+    height: auto;
   }
 }
 
