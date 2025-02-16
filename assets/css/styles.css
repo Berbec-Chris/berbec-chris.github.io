@@ -226,16 +226,6 @@ transition: box-shadow .4s;
     backdrop-filter: blur(8px);
     transition: top .4s;
   }
-
-  /* Set the width of the page to a minimum threshold for mobile devices */
-  body {
-    min-width: 720px; /* Adjust this value as needed */
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-  }
 }
 
 .nav__title,
@@ -345,8 +335,9 @@ transition: box-shadow .4s;
 }
 
 .home__image{
-  width: 400px;
+  width: 33%;
   position: relative;
+  left: 80%;
 }
 
 .home__img{
