@@ -430,21 +430,13 @@ transition: box-shadow .4s;
 
 .home__scroll-box{
   background-color: var(--black-color);
-  color: var(--white-color);
   width: 36px;
   height: 36px;
   display: grid;
   place-items: center;
-  font-size: 1rem;
   cursor: pointer;
   overflow: hidden;
   transition: background-color .4s;
-}
-
-.home__scroll-box i{
-  font-size: 10px; /* Adjust size as needed */
-  color: var(--white-color); /* Adjust color as needed */
-  animation: scroll-down 3s infinite;
 }
 
 .home__scroll{
@@ -452,6 +444,16 @@ transition: box-shadow .4s;
   width: max-content;
   margin: 0 auto;
 }
+
+.home__scroll-box i {
+  font-size: 24px;
+  color: #ffffff; /* Change to your desired color */
+  display: inline-block;
+  vertical-align: middle;
+  animation: scroll-down 3s infinite;
+}
+
+
 
 /* Animate scroll icon */
 @keyframes scroll-down {
