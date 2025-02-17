@@ -380,21 +380,21 @@ transition: box-shadow .4s;
   margin-right: 10%;
 }
 
-.home__image{
-  width: 100%;
+.home__image {
   position: relative;
+  width: 100%; /* Ensure the image container takes the full width */
 }
 
-.home__img{
+.home__img {
   display: block;
+  width: 100%; /* Ensure the image takes the full width of the container */
   height: auto;
-  width: 100%;
   position: relative;
   z-index: 10;
 }
 
-.home__shadow{
-  position: relative;
+.home__shadow {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
