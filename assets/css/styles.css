@@ -368,7 +368,7 @@ transition: box-shadow .4s;
 
 /*=============== HOME ===============*/
 .home__container {
-  padding-top: 2rem;
+  padding-top: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
