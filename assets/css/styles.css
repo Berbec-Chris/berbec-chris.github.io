@@ -355,7 +355,6 @@ transition: box-shadow .4s;
 
 /*=============== HOME ===============*/
 .home__container {
-  padding-top: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -372,7 +371,7 @@ transition: box-shadow .4s;
 .home__prefill {
   position: relative;
   width: 100%;
-  max-width: 1200px; /* Match the body's max width */
+  max-width: 1920px; /* Match the body's max width */
   margin: 0 auto; /* Center the element */
   display: flex;
   justify-content: flex-end; /* Align content to the right */
@@ -409,7 +408,7 @@ transition: box-shadow .4s;
 @media screen and (max-width: 768px){
   .home__image {
     width: 60%; /* Ensure the image takes the full width of the container */
-    left: 5%; /* Reset the left position */
+    left: -5%; /* Reset the left position */
   }
 
   .home__shadow {
