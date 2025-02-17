@@ -468,8 +468,8 @@ transition: box-shadow .4s;
 }
 
 .home__social-link{
-  background-color: var(--black-color);
-  color: var(--white-color);
+  background-color: var(--black-color) !important;
+  color: var(--white-color) !important;
   font-size: 1.25rem;
   padding: 6px;
   display: grid;
@@ -478,7 +478,7 @@ transition: box-shadow .4s;
 }
 
 .home__social-link:hover{
-  background-color: var(--black-color);
+  background-color: var(--black-color) !important;
 }
 
 .home__info{
