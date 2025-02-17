@@ -526,7 +526,7 @@ transition: box-shadow .4s;
   margin: 0 auto;
 }
 
-.home__scroll-box i {
+.home__scroll-box i{
   font-size: 24px;
   color: #ffffff; /* Change to your desired color */
   display: inline-block;
