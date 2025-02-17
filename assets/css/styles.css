@@ -40,7 +40,7 @@
 }
 
 /*========== Responsive typography ==========*/
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 769px) {
   :root {
     --biggest-font-size: 4.5rem;
     --h1-font-size: 3rem;
@@ -222,6 +222,20 @@ transition: box-shadow .4s;
   font-size: 1.25rem;
   cursor: pointer;
 }
+
+
+/* Navigation for desktop devices */
+@media screen and (min-width: 769px) {
+  .nav__menu {
+    display: none; /* Hide the menu by default */
+  }
+
+  .show-menu .nav__menu {
+    display: block; /* Show the menu when active */
+  }
+}
+
+
 /* Navigation for mobile devices */
 
 @media screen and (max-width: 768px){
@@ -229,13 +243,13 @@ transition: box-shadow .4s;
     position: fixed;
     top: -100%;
     left: 0;
-    border-color: hsla(0, 0%, 0%, 0.75);
     width: 100%;
     padding-block: 1.8rem 5rem;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     transition: top .4s;
+    overflow: hidden;
   }
   .container {
     padding: 0 1rem; /* Adjust padding for smaller screens */
@@ -251,6 +265,10 @@ transition: box-shadow .4s;
     height: 100%;
     bottom: -0.5rem; /* Adjust the bottom position */
     right: -0.5rem; /* Adjust the right position */
+  }
+
+  .show-menu .nav__menu {
+    top: 0; /* Show the menu when active */
   }
 }
 
