@@ -235,8 +235,12 @@ transition: box-shadow .4s;
     display: none; /* Hide the menu by default */
   }
 
-  .nav.show-menu .nav__menu {
+  .show-menu .nav__menu {
     display: block; /* Show the menu when active */
+  }
+
+  .nav__toggle {
+    display: none;
   }
 }
 
