@@ -117,7 +117,9 @@ img {
 }
 
 .section {
-  padding-block: 4rem 2rem;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-block: 0rem 1.5rem;
 }
 
 .section__title-1, 
