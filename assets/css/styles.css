@@ -390,7 +390,7 @@ transition: box-shadow .4s;
 /* Home image */
 .home__image {
   position: relative;
-  width: 20%; /* Adjust the width as needed */
+  width: 15%; /* Adjust the width as needed */
 }
 
 /* Home image properties */
