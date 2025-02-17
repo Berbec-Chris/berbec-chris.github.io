@@ -468,8 +468,8 @@ transition: box-shadow .4s;
 }
 
 .home__social-link{
-  background-color: var(--black-color) !important;
-  color: var(--white-color) !important;
+  background-color: var(--black-color) ;
+  color: var(--white-color) ;
   font-size: 1.25rem;
   padding: 6px;
   display: grid;
@@ -478,7 +478,15 @@ transition: box-shadow .4s;
 }
 
 .home__social-link:hover{
-  background-color: var(--black-color) !important;
+  background-color: var(--black-color) ;
+}
+
+[class^="ri-"], [class*=" ri-"] {
+  color: black;
+  font-family: 'remixicon';
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .home__info{
