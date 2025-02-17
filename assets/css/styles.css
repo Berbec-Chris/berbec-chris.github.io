@@ -431,7 +431,6 @@ transition: box-shadow .4s;
 .home__arrow{
   left: 40%;
   bottom: -4rem;
-  color: transparent;
 }
 
 .home__line{
