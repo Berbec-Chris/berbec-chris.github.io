@@ -420,7 +420,7 @@ transition: box-shadow .4s;
 }
 
 
-.home__arrow,
+/*.home__arrow,*/
 .home__line{
   position: absolute;
   filter: invert(1);
@@ -428,10 +428,10 @@ transition: box-shadow .4s;
   transition: filter .4s;
 }
 
-.home__arrow{
+/*.home__arrow{
   left: 40%;
   bottom: -4rem;
-}
+}*/
 
 .home__line{
   right: -2rem;
