@@ -544,12 +544,12 @@ transition: box-shadow .4s;
 
 /*=============== PROJECTS ===============*/
 .projects{
-  background-color: var(--container-color);
   transition: background-color .4s;
 }
 
 .projects__container{
   row-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
 }
 
 .project__card{
