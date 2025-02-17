@@ -363,8 +363,11 @@ transition: box-shadow .4s;
 
 /* Home name */
 .home__name {
+  position: absolute;
   font-size: var(--biggest-font-size);
   text-align: center;
+  padding-top: 3rem;
+  padding-left: 3rem;
 }
 
 /* Home prefill */
@@ -439,9 +442,9 @@ transition: box-shadow .4s;
 }
 
 .home__prefill,
+
 .geometric-box{
-  top: 2.5rem;
-  left: -0.7rem;
+  top: 9rem;
   z-index: 10;
 }
 
