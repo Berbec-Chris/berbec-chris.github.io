@@ -458,8 +458,8 @@ transition: box-shadow .4s;
 .home__social{
   height: max-content;
   position: absolute;
-  left: -3rem;
-  top: 0;
+  left: -5rem;
+  top: 11rem;
   bottom: 0;
   margin: auto 0;
   display: grid;
