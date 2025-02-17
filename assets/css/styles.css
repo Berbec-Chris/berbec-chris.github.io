@@ -394,7 +394,7 @@ transition: box-shadow .4s;
 /* Home image */
 .home__image {
   position: relative;
-  width: 40%; /* Adjust the width as needed */
+  width: 30%; /* Adjust the width as needed */
 }
 
 /* Home image properties */
@@ -409,8 +409,8 @@ transition: box-shadow .4s;
 /* Home shadow properties */
 .home__shadow {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 5%;
+  left: 5%;
   width: 100%;
   height: 100%;
   background-color: var(--container-color);
