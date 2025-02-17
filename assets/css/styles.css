@@ -501,7 +501,7 @@ transition: box-shadow .4s;
   display: none;
 }
 
-.home__scroll-box{
+.home__scroll-box {
   background-color: var(--black-color);
   width: 36px;
   height: 36px;
@@ -510,6 +510,14 @@ transition: box-shadow .4s;
   cursor: pointer;
   overflow: hidden;
   transition: background-color .4s;
+}
+
+.home__scroll-box i {
+  font-size: 24px;
+  color: #ffffff; /* Ensure the color is set */
+  display: inline-block;
+  vertical-align: middle;
+  animation: scroll-down 3s infinite;
 }
 
 .home__scroll{
