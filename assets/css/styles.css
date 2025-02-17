@@ -362,13 +362,13 @@ transition: box-shadow .4s;
 }
 
 /* Home name */
-.home__name {
+/*.home__name {
   position: absolute;
   font-size: var(--biggest-font-size);
   text-align: center;
   padding-top: 3rem;
   padding-left: 3rem;
-}
+}*/
 
 /* Home prefill */
 .home__prefill {
