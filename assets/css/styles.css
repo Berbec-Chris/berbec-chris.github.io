@@ -482,7 +482,7 @@ transition: box-shadow .4s;
 }
 
 [class^="ri-"], [class*=" ri-"] {
-  color: black;
+  color: var(--white-color);
   font-family: 'remixicon';
   font-style: normal;
   -webkit-font-smoothing: antialiased;
