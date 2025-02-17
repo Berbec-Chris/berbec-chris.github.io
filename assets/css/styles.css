@@ -66,6 +66,7 @@ html {
 body {
   max-width: 1920px; /* Adjust this value as needed */
   margin: 0 auto; /* Center the body */
+  padding-top: 3rem;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
@@ -362,13 +363,10 @@ transition: box-shadow .4s;
 }
 
 /* Home name */
-/*.home__name {
-  position: absolute;
+.home__name {
   font-size: var(--biggest-font-size);
   text-align: center;
-  padding-top: 3rem;
-  padding-left: 3rem;
-}*/
+}
 
 /* Home prefill */
 .home__prefill {
@@ -442,9 +440,9 @@ transition: box-shadow .4s;
 }
 
 .home__prefill,
-
 .geometric-box{
-  top: 9rem;
+  top: 2.5rem;
+  left: -0.7rem;
   z-index: 10;
 }
 
