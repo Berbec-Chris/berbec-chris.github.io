@@ -65,8 +65,8 @@ html {
 
 body {
   max-width: 1920px; /* Adjust this value as needed */
-  margin: 0 auto; /* Center the body */
-  padding-top: 3rem;
+  margin: 5rem auto; /* Center the body */
+  padding-top: 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
