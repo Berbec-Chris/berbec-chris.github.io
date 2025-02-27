@@ -383,6 +383,8 @@ transition: box-shadow .4s;
   left: 50%;
   transform: translateX(-50%);
   margin-top: 1rem;
+  font-size: var(--biggest-font-size);
+  width: max-content;
 }
 
 /* Home prefill */
