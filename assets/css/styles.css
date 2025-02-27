@@ -250,7 +250,7 @@ transition: box-shadow .4s;
 
 @media screen and (max-width: 768px){
   body{
-    padding-top: 5rem
+    padding-top: 0rem
   }
 
   .nav__menu{
@@ -538,7 +538,7 @@ transition: box-shadow .4s;
   }
   50%{
     transform: translateY(0);
-    opacity: 0;
+    opacity: 1;
   }
   100%{
     transform: translateY(.6rem);
@@ -550,7 +550,12 @@ transition: box-shadow .4s;
 
 
 /*=============== ABOUT ===============*/
-
+.about__img{
+  position: relative;
+  justify-content: left;
+  width: 40%;
+  margin: 2rem;
+}
 
 /*=============== SERVICES ===============*/
 
