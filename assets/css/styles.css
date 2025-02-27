@@ -551,6 +551,12 @@ transition: box-shadow .4s;
 
 
 /*=============== ABOUT ===============*/
+.about__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
 .about__prefil{
   position: relative;
   justify-content: left;
@@ -564,6 +570,39 @@ transition: box-shadow .4s;
     margin: 1rem;
   }
   
+}
+
+.about__shadow {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--container-color);
+    border: 4px solid var(--black-color);
+    z-index: 5;
+    transition: background-color .4s;
+}
+
+.about__line {
+    position: absolute;
+    filter: invert(1);
+    width: 50px;
+    transition: filter .4s;
+    right: -2rem;
+    bottom: -0.5rem;
+}
+
+.about__box {
+    position: absolute;
+    top: 2.5rem;
+    left: -0.7rem;
+    z-index: 10;
+}
+
+.about__img {
+    position: relative;
+    z-index: 10;
 }
 
 /*=============== SERVICES ===============*/
