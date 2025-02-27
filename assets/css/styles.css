@@ -64,7 +64,7 @@ html {
 }
 
 body {
-  max-width: 1920px; /* Adjust this value as needed */
+  max-width: 1020px; /* Adjust this value as needed */
   margin: 0 auto; /* Center the body */
   padding-top: var(--header-height);
   font-family: var(--body-font);
