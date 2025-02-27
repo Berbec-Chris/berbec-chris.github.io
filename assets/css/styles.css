@@ -581,7 +581,7 @@ transition: box-shadow .4s;
 
 .about__image {
     position: relative;
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 
@@ -618,6 +618,19 @@ transition: box-shadow .4s;
     z-index: 10;
     width: 100%;
     height: auto;
+}
+
+.about {
+    position: relative;
+    text-align: center;
+}
+
+.section__title-1 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1rem;
 }
 
 /*=============== SERVICES ===============*/
