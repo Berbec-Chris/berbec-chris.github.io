@@ -553,8 +553,16 @@ transition: box-shadow .4s;
 /*=============== ABOUT ===============*/
 .about__container {
     display: grid;
-    grid-template-columns: 65% 35%;
+    grid-template-columns: 35% 65%;
     gap: 2rem;
+    align-items: center; /* Ensure both columns are vertically aligned */
+    grid-auto-rows: auto; /* Ensure it creates one row */
+}
+
+.about__left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about__info {
