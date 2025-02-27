@@ -65,15 +65,14 @@ html {
 
 body {
   max-width: 1920px; /* Adjust this value as needed */
-  margin: 5rem auto; /* Center the body */
-  padding-top: 0;
+  margin: 0 auto; /* Center the body */
+  padding-top: var(--header-height);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
-  display: flex;
-  justify-content: center;
   overflow-x: hidden;
+  overflow-y: auto; /* Ensure vertical scrolling */
 }
 
 h1, h2, h3, h4 {
