@@ -653,7 +653,7 @@ transition: box-shadow .4s;
 .projects__container{
   width: 100%;
   row-gap: 2rem;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .project__card{
