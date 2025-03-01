@@ -236,6 +236,9 @@ transition: box-shadow .4s;
 .nav__toggle{
   font-size: 1.25rem;
   cursor: pointer;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 
