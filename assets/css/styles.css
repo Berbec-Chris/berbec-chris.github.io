@@ -662,6 +662,7 @@ transition: box-shadow .4s;
 
 .projects__container {
   display: grid;
+  height: fit-content;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: start;
