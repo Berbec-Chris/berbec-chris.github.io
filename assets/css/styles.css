@@ -265,8 +265,9 @@ transition: box-shadow .4s;
 /* Navigation for mobile devices */
 
 @media screen and (max-width: 768px){
-  body{
-    padding-top: 0rem
+  body {
+    padding-top: 0rem;
+    margin: 0 1rem; /* Add margin to the body */
   }
   .nav__list-desktop{
     display: none
@@ -284,7 +285,7 @@ transition: box-shadow .4s;
     overflow: hidden;
   }
   .container {
-    padding: 1rem 1rem; /* Adjust padding for smaller screens */
+    padding: 1rem; /* Adjust padding for smaller screens */
   }
   .show-menu .nav__menu {
     top: 0; /* Show the menu when active */
@@ -589,11 +590,12 @@ transition: box-shadow .4s;
 
 /*=============== ABOUT ===============*/
 .about__container {
-    display: grid;
-    grid-template-columns: 35% 65%;
-    gap: 2rem;
-    align-items: center; /* Ensure both columns are vertically aligned */
-    grid-auto-rows: auto; /* Ensure it creates one row */
+  display: grid;
+  grid-template-columns: 1fr; /* Stack columns vertically */
+  gap: 2rem;
+  align-items: center; /* Ensure both columns are vertically aligned */
+  grid-auto-rows: auto; /* Ensure it creates one row */
+  padding: 1rem; /* Add padding */
 }
 
 .about__left-column {
