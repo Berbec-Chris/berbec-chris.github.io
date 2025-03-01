@@ -34,7 +34,7 @@ const shadowHeader = () => {
 window.addEventListener('scroll', shadowHeader);
 
 // Contact Form Popup
-document.getElementById('contact-button').addEventListener('click', function() {
+document.getElementById('contact__button').addEventListener('click', function() {
     document.getElementById('contact-popup').classList.add('active');
     document.getElementById('contact-overlay').classList.add('active');
 });
@@ -61,7 +61,7 @@ document.querySelector('.contact__form').addEventListener('submit', function (e)
         } else {
             alert('Oops! There was a problem submitting your form');
         }
-    }).catch(error => {
+    }).catch(() => {
         alert('Oops! There was a problem submitting your form');
     });
 });
