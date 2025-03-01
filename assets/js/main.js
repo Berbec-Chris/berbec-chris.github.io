@@ -47,3 +47,27 @@ window.addEventListener('scroll', shadowHeader)
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+
+
+/*=============== CONTACT FORM ===============*/
+document.querySelector('.contact__form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const form = e.target;
+    const formData = new FormData(form);
+    fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            form.reset();
+            alert('Thank you for your message!');
+        } else {
+            alert('Oops! There was a problem submitting your form');
+        }
+    }).catch(error => {
+        alert('Oops! There was a problem submitting your form');
+    });
+});
