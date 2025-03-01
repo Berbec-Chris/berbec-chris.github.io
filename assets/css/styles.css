@@ -127,7 +127,9 @@ img {
 }
 
 .section__title-1, 
-.section__title-2 {
+.section__title-2, 
+.section__title-3, 
+.section__title-4 {
   position: relative;
   font-size: var(--h1-font-size);
   width: max-content;
@@ -135,13 +137,17 @@ img {
 }
 
 .section__title-1 span, 
-.section__title-2 span {
+.section__title-2 span, 
+.section__title-3 span, 
+.section__title-4 span {
   z-index: 5;
   position: relative;
 }
 
 .section__title-1::after, 
-.section__title-2::after {
+.section__title-2::after, 
+.section__title-3::after, 
+.section__title-4::after {
   content: "";
   width: 40px;
   height: 28px;
@@ -151,7 +157,9 @@ img {
   right: -8px;
 }
 
-.section__title-2::after {
+.section__title-2::after, 
+.section__title-3::after, 
+.section__title-4::after {
   top: initial;
   bottom: -4px;
 }
