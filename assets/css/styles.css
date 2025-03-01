@@ -59,11 +59,9 @@
   margin: 0;
 }
 
-html {
-  scroll-behavior: smooth;
+html, body {
   height: 100%; /* Ensure full height */
 }
-
 
 body {
   max-width: 1020px; /* Adjust this value as needed */
@@ -177,6 +175,7 @@ img {
 }
 
 .main {
+  min-height: calc(100vh - var(--header-height)); /* Ensure main content takes full height */
   overflow: hidden; /* For animation ScrollReveal */
 }
 
