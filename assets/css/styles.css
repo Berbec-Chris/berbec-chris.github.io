@@ -591,11 +591,17 @@ transition: box-shadow .4s;
 /*=============== ABOUT ===============*/
 .about__container {
   display: grid;
-  grid-template-columns: 1fr; /* Stack columns vertically */
+  grid-template-columns: 35% 65%; /* Restore columns for desktop */
   gap: 2rem;
   align-items: center; /* Ensure both columns are vertically aligned */
   grid-auto-rows: auto; /* Ensure it creates one row */
   padding: 1rem; /* Add padding */
+}
+
+@media screen and (max-width: 768px) {
+  .about__container {
+    grid-template-columns: 1fr; /* Stack columns vertically for mobile */
+  }
 }
 
 .about__left-column {
@@ -913,6 +919,10 @@ transition: box-shadow .4s;
 
 .contact__button:active {
     transform: translateY(0);
+}
+
+.contact__button:focus {
+  outline: none;
 }
 
 .contact__placeholder {
