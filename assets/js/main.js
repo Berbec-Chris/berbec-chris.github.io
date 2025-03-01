@@ -2,23 +2,21 @@ const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
 const navClose = document.getElementById('nav-close');
 
-
-// This code is redundant, as similar functionality is already implemented below.
-/* Show Menu */
+// Show Menu
 if (navToggle) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu');
     });
 }
 
-/* Hide Menu */
+// Hide Menu
 if (navClose) {
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu');
     });
 }
 
-/* Remove Menu on Link Click */
+// Remove Menu on Link Click
 const navLink = document.querySelectorAll('.nav__link');
 
 function linkAction() {
@@ -27,31 +25,25 @@ function linkAction() {
 
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
-/*=============== SHADOW HEADER ===============*/
-const shadowHeader = () =>{
-    const header = document.getElementById('header')
-    // Add a class if the bottom offset is greater than 50 of the viewport
+// Shadow Header
+const shadowHeader = () => {
+    const header = document.getElementById('header');
     this.scrollY >= 50 ? header.classList.add('shadow-header') 
-                       : header.classList.remove('shadow-header')
+                       : header.classList.remove('shadow-header');
 }
-window.addEventListener('scroll', shadowHeader)
+window.addEventListener('scroll', shadowHeader);
 
-/*=============== EMAIL JS ===============*/
+// Contact Form Popup
+document.getElementById('contact-button').addEventListener('click', function() {
+    document.getElementById('contact-popup').classList.add('active');
+    document.getElementById('contact-overlay').classList.add('active');
+});
+document.getElementById('contact-overlay').addEventListener('click', function() {
+    document.getElementById('contact-popup').classList.remove('active');
+    document.getElementById('contact-overlay').classList.remove('active');
+});
 
-
-/*=============== SHOW SCROLL UP ===============*/ 
-
-
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-
-
-/*=============== DARK LIGHT THEME ===============*/ 
-
-
-/*=============== SCROLL REVEAL ANIMATION ===============*/
-
-
-/*=============== CONTACT FORM ===============*/
+// Contact Form Submission
 document.querySelector('.contact__form').addEventListener('submit', function (e) {
     e.preventDefault();
     const form = e.target;
