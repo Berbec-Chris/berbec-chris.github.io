@@ -5,7 +5,7 @@ const navClose = document.getElementById('nav-close');
 // Show Menu
 if (navToggle) {
     navToggle.addEventListener('click', () => {
-        navMenu.classList.add('show-menu');
+        navMenu.classList.toggle('show-menu');
     });
 }
 
