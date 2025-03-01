@@ -61,11 +61,13 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: var(--header-height); /* Add padding to prevent cutting off the top */
+  height: 100%; /* Ensure full height */
 }
+
 
 body {
   max-width: 1020px; /* Adjust this value as needed */
+  height: 100%; /* Ensure full height */
   margin: 0 auto; /* Center the body */
   padding-top: var(--header-height);
   font-family: var(--body-font);
