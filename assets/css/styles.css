@@ -263,6 +263,9 @@ transition: box-shadow .4s;
     padding-top: 0rem
   }
 
+  .nav__list-desktop {
+    display: none; /* Hide the desktop nav list */
+  }
   .nav__menu{
     position: fixed;
     top: -100%;
@@ -280,6 +283,17 @@ transition: box-shadow .4s;
   }
   .show-menu .nav__menu {
     top: 0; /* Show the menu when active */
+  }
+  .nav__toggle {
+    display: block;
+  }
+  .nav__list {
+    display: none; /* Hide the mobile nav list by default */
+  }
+  .show-menu .nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
   }
 }
 

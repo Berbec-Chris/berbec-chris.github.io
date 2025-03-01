@@ -417,6 +417,12 @@
             document.getElementById('contact-popup').classList.remove('active');
             document.getElementById('contact-overlay').classList.remove('active');
          });
+         document.getElementById('nav-toggle').addEventListener('click', function() {
+            document.getElementById('nav-menu').classList.toggle('show-menu');
+         });
+         document.getElementById('nav-close').addEventListener('click', function() {
+            document.getElementById('nav-menu').classList.remove('show-menu');
+         });
       </script>
    </body>
 </html>
