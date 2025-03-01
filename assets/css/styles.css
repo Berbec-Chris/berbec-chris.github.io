@@ -737,8 +737,9 @@ transition: box-shadow .4s;
 
 /*=============== CONTACT ===============*/
 .contact {
-  padding: 2rem 0;
+  padding: 4rem 0;
   text-align: center;
+  background-color: var(--container-color);
 }
 
 .contact__container {
@@ -755,6 +756,12 @@ transition: box-shadow .4s;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact__form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .contact__form-group {
@@ -766,6 +773,7 @@ transition: box-shadow .4s;
   margin-bottom: 0.5rem;
   font-weight: var(--font-medium);
   color: var(--title-color);
+  transition: color 0.3s;
 }
 
 .contact__form-input {
@@ -776,11 +784,12 @@ transition: box-shadow .4s;
   font-size: var(--normal-font-size);
   color: var(--text-color);
   background-color: var(--white-color);
-  transition: border-color 0.3s;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .contact__form-input:focus {
   border-color: var(--first-color);
+  box-shadow: 0 0 0 3px rgba(255, 87, 34, 0.2);
   outline: none;
 }
 
@@ -794,11 +803,16 @@ transition: box-shadow .4s;
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .contact__form-button:hover {
   background-color: var(--first-color-light);
+  transform: translateY(-2px);
+}
+
+.contact__form-button:active {
+  transform: translateY(0);
 }
 
 /* Opaque placeholder */
