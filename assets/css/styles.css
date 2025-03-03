@@ -124,7 +124,7 @@ img {
   max-width: 1920px;
   margin: 0 auto;
   padding-block: 0rem 1.5rem;
-  height: 90vh; /* Ensure sections take 90% height of the viewport */
+  height: 100vh; /* Ensure sections take full height of the viewport */
   display: flex;
   flex-direction: column;
   justify-content: center; /* Center content vertically */
@@ -615,16 +615,11 @@ transition: box-shadow .4s;
 
 /*=============== ABOUT ===============*/
 .about__container {
-  display: grid;
-  grid-template-columns: 35% 65%; /* Restore columns for desktop */
-  gap: 2rem;
-  align-items: center; /* Ensure both columns are vertically aligned */
-  grid-auto-rows: auto; /* Ensure it creates one row */
-  padding: 1rem; /* Add padding */
-  height: 100%; /* Ensure containers take full height of the section */
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  justify-content: center; /* Center content vertically */
+  height: 100%; /* Ensure containers take full height of the section */
 }
 
 @media screen and (max-width: 768px) {
@@ -746,15 +741,11 @@ transition: box-shadow .4s;
 }
 
 .projects__container {
-  display: grid;
-  height: fit-content;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  align-items: start;
-  height: 100%; /* Ensure containers take full height of the section */
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  justify-content: center; /* Center content vertically */
+  height: 100%; /* Ensure containers take full height of the section */
 }
 
 .project__card {
@@ -861,9 +852,6 @@ transition: box-shadow .4s;
   align-items: center;
   flex-direction: column;
   height: 100%; /* Ensure containers take full height of the section */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Center content vertically */
 }
 
 .contact__form {
@@ -1015,7 +1003,7 @@ transition: box-shadow .4s;
   background-color: var(--body-color);
   padding: 2rem 0;
   text-align: center;
-  color: var(--text-color);
+  color: var (--text-color);
 }
 
 .footer__container {
