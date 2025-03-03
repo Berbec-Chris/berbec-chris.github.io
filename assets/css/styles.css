@@ -615,10 +615,10 @@ transition: box-shadow .4s;
 
 /*=============== ABOUT ===============*/
 .about__container {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
+  gap: 2rem;
   align-items: center;
-  flex-direction: column;
   height: 100%; /* Ensure containers take full height of the section */
 }
 
@@ -741,11 +741,11 @@ transition: box-shadow .4s;
 }
 
 .projects__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100%; /* Ensure containers take full height of the section */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3x2 grid */
+  gap: 2rem;
+  align-items: start;
+  padding: 2rem 0;
 }
 
 .project__card {
