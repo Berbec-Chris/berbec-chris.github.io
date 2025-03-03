@@ -694,6 +694,31 @@ transition: box-shadow .4s;
     margin-top: 1rem;
 }
 
+.about__scroll {
+  display: block;
+  width: max-content;
+  margin: 2rem auto 0; /* Center the button and add margin */
+}
+
+.about__scroll-box {
+  background-color: var(--black-color);
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color .4s;
+}
+
+.about__scroll-box i {
+  font-size: 24px;
+  color: #ffffff; /* Change to your desired color */
+  display: inline-block;
+  vertical-align: middle;
+  animation: scroll-down 3s infinite;
+}
+
 /*=============== SERVICES ===============*/
 
 
