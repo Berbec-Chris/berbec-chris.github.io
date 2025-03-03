@@ -414,6 +414,16 @@ transition: box-shadow .4s;
   transform: translateX(-50%);
   font-size: var(--biggest-font-size);
   width: max-content;
+  max-width: 90%; /* Ensure it doesn't exceed the viewport width */
+  word-wrap: break-word; /* Allow text to wrap */
+  text-align: center; /* Center the text */
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .home__name {
+    font-size: var(--h1-font-size); /* Adjust font size for mobile */
+  }
 }
 
 /* Home prefill */
