@@ -124,7 +124,7 @@ img {
   max-width: 1920px;
   margin: 0 auto;
   padding-block: 0rem 1.5rem;
-  min-height: 100vh; /* Ensure sections take full height of the viewport */
+  height: 90vh; /* Ensure sections take 90% height of the viewport */
   display: flex;
   flex-direction: column;
   justify-content: center; /* Center content vertically */
@@ -409,6 +409,7 @@ transition: box-shadow .4s;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100%; /* Ensure containers take full height of the section */
 }
 
 .home__name {
@@ -421,6 +422,8 @@ transition: box-shadow .4s;
   max-width: 90%; /* Ensure it doesn't exceed the viewport width */
   word-wrap: break-word; /* Allow text to wrap */
   text-align: center; /* Center the text */
+  margin-top: 0; /* Remove top margin */
+  margin-bottom: 1rem; /* Add bottom margin */
 }
 
 /* Responsive adjustments for smaller screens */
@@ -550,6 +553,7 @@ transition: box-shadow .4s;
   text-align: center;
   color: var(--title-color);
   margin-bottom: 1.5rem;
+  margin-bottom: 1rem; /* Add bottom margin */
 }
 
 .home__description b{
@@ -577,6 +581,7 @@ transition: box-shadow .4s;
   display: block;
   width: max-content;
   margin: 0 auto;
+  margin-top: auto; /* Push scroll button to the bottom */
 }
 
 .home__scroll-box i{
@@ -616,6 +621,10 @@ transition: box-shadow .4s;
   align-items: center; /* Ensure both columns are vertically aligned */
   grid-auto-rows: auto; /* Ensure it creates one row */
   padding: 1rem; /* Add padding */
+  height: 100%; /* Ensure containers take full height of the section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
 }
 
 @media screen and (max-width: 768px) {
@@ -696,12 +705,15 @@ transition: box-shadow .4s;
     left: 50%;
     transform: translateX(-50%);
     margin-top: 1rem;
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 1rem; /* Add bottom margin */
 }
 
 .about__scroll {
   display: block;
   width: max-content;
   margin: 2rem auto 0; /* Center the button and add margin */
+  margin-top: auto; /* Push scroll button to the bottom */
 }
 
 .about__scroll-box {
@@ -739,6 +751,10 @@ transition: box-shadow .4s;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: start;
+  height: 100%; /* Ensure containers take full height of the section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
 }
 
 .project__card {
@@ -844,6 +860,10 @@ transition: box-shadow .4s;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100%; /* Ensure containers take full height of the section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
 }
 
 .contact__form {
@@ -951,7 +971,7 @@ transition: box-shadow .4s;
     border: none;
     border-radius: 4px;
     font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
+    font-weight: var (--font-medium);
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
     margin-top: 2rem;
