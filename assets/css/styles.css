@@ -124,6 +124,10 @@ img {
   max-width: 1920px;
   margin: 0 auto;
   padding-block: 0rem 1.5rem;
+  min-height: 100vh; /* Ensure sections take full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
 }
 
 .section__title-1, 
