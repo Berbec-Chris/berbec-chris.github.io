@@ -71,4 +71,16 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Oops! There was a problem submitting your form');
         });
     });
+
+    // ScrollReveal animations
+    const sr = ScrollReveal({
+        origin: 'top',
+        distance: '50px',
+        duration: 1000,
+        delay: 200,
+        reset: true
+    });
+
+    sr.reveal('.home__name, .home__description, .home__scroll, .home__social', { interval: 200 });
+    sr.reveal('.about__title, .about__description, .about__list', { interval: 200 });
 });
