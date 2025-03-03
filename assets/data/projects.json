@@ -1,0 +1,52 @@
+{
+    "projects": [
+        {
+            "image": "assets/img/project-1.jpg",
+            "link": "https://berbec-chris.github.io/assets/pages/project-1-page.pdf",
+            "subtitle": "Increasing User Engagement in Online FIA WRC Broadcasts",
+            "title": "Final Degree Thesis Project",
+            "description": "How can Interactive Technologies be Leveraged to Increase User Engagement in the FIA World Rally Championship Online Broadcasting Platform?",
+            "github": "https://github.com/Berbec-Chris/berbec-chris.github.io/tree/main"
+        },
+        {
+            "image": "assets/img/project-2.jpg",
+            "link": "https://berbec-chris.github.io/assets/pages/project-2-page.pdf",
+            "subtitle": "Poppy the Shy Wall",
+            "title": "Individual Studio II Project",
+            "description": "A material exploration of AI body detection in the context of Architecture-centred Interaction Design",
+            "github": "https://github.com/Berbec-Chris/berbec-chris.github.io/tree/main"
+        },
+        {
+            "image": "assets/img/project-3.jpg",
+            "link": "https://berbec-chris.github.io/assets/pages/project-3-page.pdf",
+            "subtitle": "Hand-in PDF Archive",
+            "title": "Interactivity Course Journal",
+            "description": "<li>Module 1: Exploring expressivity with point lights.</li><li>Module 2: Nuanced control with sound.</li><li>Module 3: Kinaesthetic Interaction & Machine Learning.</li>",
+            "github": "https://github.com/Berbec-Chris/berbec-chris.github.io/tree/main"
+        },
+        {
+            "image": "assets/img/project-4.jpg",
+            "link": "https://berbec-chris.github.io/assets/pages/project-4-page.pdf",
+            "subtitle": "Hand-in PDF Archive",
+            "title": "Tangible and Embodied Interaction(TEI) Course Journal",
+            "description": "<li>Module 1: Glanceability</li><li>Module 2: Smell and Vortex Propagation</li><li>Module 3: Soft</li><li>Module 4: IoT & AI</li>",
+            "github": "https://github.com/Berbec-Chris/berbec-chris.github.io/tree/main"
+        },
+        {
+            "image": "assets/img/project-5.jpg",
+            "link": "https://berbec-chris.github.io/assets/pages/project-5-page.pdf",
+            "subtitle": "3D Visualisations",
+            "title": "Mathendahl, Niederkorn, Luxembourg",
+            "description": "<li>Project for Agence d'Architecture Stan Berbec</li>",
+            "github": "https://github.com/Berbec-Chris/berbec-chris.github.io/tree/main"
+        },
+        {
+            "image": "assets/img/project-6.jpg",
+            "link": "https://berbec-chris.github.io/assets/pages/project-6-page.pdf",
+            "subtitle": "2D Blueprints, 3D Visualisations",
+            "title": "Pfaffenthal, Luxembourg",
+            "description": "<li>Iterative Design in 2D, modifying plans according to stakeholders needs.</li><li>Modelling in 3D to help stakeholders visualise project.</li>",
+            "github": "https://github.com/Berbec-Chris/berbec-chris.github.io/tree/main"
+        }
+    ]
+}

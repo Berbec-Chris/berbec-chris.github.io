@@ -94,4 +94,32 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Load Projects Dynamically
+    fetch('assets/data/projects.json')
+        .then(response => response.json())
+        .then(data => {
+            const projectsContainer = document.querySelector('.projects__container');
+            projectsContainer.innerHTML = data.projects.map(project => `
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="${project.image}" alt="image" class="projects__img">
+                        <a href="${project.link}" target="_blank" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle" style="text-align: center;">${project.subtitle}</h3>
+                        <h2 class="projects__title" style="text-align: center;">${project.title}</h2>
+                        <p class="projects__description">${project.description}</p>
+                    </div>
+                    <div class="projects__buttons">
+                        <a href="${project.github}" target="_blank" class="projects__link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </div>
+                </article>
+            `).join('');
+            sr.reveal('.projects__card', { interval: 200 });
+        });
 });
