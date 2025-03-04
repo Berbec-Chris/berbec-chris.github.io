@@ -880,6 +880,7 @@ transition: box-shadow .4s;
   padding: 4rem 0;
   text-align: center;
   background-color: var(--container-color);
+  height: 50vh;
 }
 
 .contact__container {
@@ -887,7 +888,7 @@ transition: box-shadow .4s;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100%; /* Ensure containers take full height of the section */
+  height: 100vh; /* Ensure containers take full height of the section */
 }
 
 .contact__form {
