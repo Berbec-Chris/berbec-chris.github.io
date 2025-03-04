@@ -866,11 +866,11 @@ transition: box-shadow .4s;
     padding: 1rem;
     box-sizing: border-box;
     transform: translateY(100%);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, opacity 0.3s;
     opacity: 0;
 }
 
-.projects__card:hover .projects__description {
+.projects__card--hover:hover .projects__description {
     transform: translateY(0);
     opacity: 1;
 }
