@@ -709,7 +709,7 @@ transition: box-shadow .4s;
   display: block;
   width: max-content;
   margin: 0 auto; /* Center the button */
-  margin-top: auto; /* Push scroll button to the bottom */
+  margin-top: auto; /* Push scroll button to the bottom*/
 }
 
 .about__scroll-box {
