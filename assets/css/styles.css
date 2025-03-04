@@ -839,6 +839,28 @@ transition: box-shadow .4s;
   color: var(--first-color);
 }
 
+.projects__card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projects__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projects__card--hover .projects__description {
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translateY(20px);
+}
+
+.projects__card--hover:hover .projects__description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /*=============== CONTACT ===============*/
 .contact {
   padding: 4rem 0;
