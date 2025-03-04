@@ -619,12 +619,13 @@ transition: box-shadow .4s;
   grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
   gap: 2rem;
   align-items: center;
-  height: 100%; /* Ensure containers take full height of the section */
+  height: 100vh; /* Ensure containers take full height of the section */
 }
 
 @media screen and (max-width: 768px) {
   .about__container {
     grid-template-columns: 1fr; /* Stack columns vertically for mobile */
+    height: auto; /* Allow auto height for mobile */
   }
 }
 
@@ -707,7 +708,7 @@ transition: box-shadow .4s;
 .about__scroll {
   display: block;
   width: max-content;
-  margin: 2rem auto 0; /* Center the button and add margin */
+  margin: 0 auto; /* Center the button */
   margin-top: auto; /* Push scroll button to the bottom */
 }
 
@@ -728,6 +729,11 @@ transition: box-shadow .4s;
   display: inline-block;
   vertical-align: middle;
   animation: scroll-down 3s infinite;
+}
+
+.about__list {
+    list-style-type: none; /* Hide list item markers */
+    padding-left: 0; /* Remove default padding */
 }
 
 /*=============== SERVICES ===============*/
