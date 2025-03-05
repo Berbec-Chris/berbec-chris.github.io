@@ -84,10 +84,21 @@ document.addEventListener('DOMContentLoaded', function() {
     sr.reveal('.home__name, .home__description, .home__scroll, .home__social', { interval: 200 });
     sr.reveal('.about__title, .about__description, .about__list', { interval: 200 });
 
-    // Scroll Down Button
+    // Scroll Down Button for About Section
     const aboutScrollButton = document.querySelector('.about__scroll-box');
     if (aboutScrollButton) {
         aboutScrollButton.addEventListener('click', () => {
+            const nextSection = document.querySelector('#services');
+            if (nextSection) {
+                nextSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    }
+
+    // Scroll Down Button for Services Section
+    const servicesScrollButton = document.querySelector('.services__scroll-box');
+    if (servicesScrollButton) {
+        servicesScrollButton.addEventListener('click', () => {
             const nextSection = document.querySelector('#projects');
             if (nextSection) {
                 nextSection.scrollIntoView({ behavior: 'smooth' });

@@ -782,6 +782,32 @@ transition: box-shadow .4s;
     color: var(--text-color);
 }
 
+.services__scroll {
+  display: block;
+  width: max-content;
+  margin: 0 auto; /* Center the button */
+  margin-top: auto; /* Push scroll button to the bottom */
+}
+
+.services__scroll-box {
+  background-color: var(--black-color);
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color .4s;
+}
+
+.services__scroll-box i {
+  font-size: 24px;
+  color: #ffffff; /* Change to your desired color */
+  display: inline-block;
+  vertical-align: middle;
+  animation: scroll-down 3s infinite;
+}
+
 /*=============== PROJECTS ===============*/
 .projects {
   padding: 4rem 0;
