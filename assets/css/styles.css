@@ -763,6 +763,7 @@ transition: box-shadow .4s;
 .projects__gallery-container {
   display: flex;
   transition: transform 0.3s ease-in-out;
+  width: max-content; /* Ensure the container can expand to fit all project cards */
 }
 
 .projects__gallery-arrow {
@@ -788,12 +789,10 @@ transition: box-shadow .4s;
 .projects__card {
   position: relative;
   overflow: hidden;
-  padding: 10px;
-  background-color: var(--container-color);
   transition: transform 0.3s, box-shadow 0.3s;
   width: 300px;
   flex-shrink: 0;
-  border-radius: 4px;
+  margin-right: 1rem; /* Add margin between cards */
 }
 
 .projects__card:hover {
