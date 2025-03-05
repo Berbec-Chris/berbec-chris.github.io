@@ -763,6 +763,8 @@ transition: box-shadow .4s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
+    position: relative; /* Add relative positioning */
+    overflow: hidden; /* Hide overflow */
 }
 
 .services__card:hover {
@@ -785,32 +787,22 @@ transition: box-shadow .4s;
 .services__description {
     font-size: var(--small-font-size);
     color: var(--text-color);
+    position: absolute; /* Position the description absolutely */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Add background color */
+    color: var(--white-color); /* Change text color */
+    padding: 1rem;
+    box-sizing: border-box;
+    transform: translateY(100%); /* Hide the description initially */
+    transition: transform 0.3s ease-in-out, opacity 0.3s;
+    opacity: 0; /* Hide the description initially */
 }
 
-.services__scroll {
-    display: block;
-    width: max-content;
-    margin: 0 auto; /* Center the button */
-    margin-top: auto; /* Push scroll button to the bottom */
-}
-
-.services__scroll-box {
-    background-color: var(--black-color);
-    width: 36px;
-    height: 36px;
-    display: grid;
-    place-items: center;
-    cursor: pointer;
-    overflow: hidden;
-    transition: background-color .4s;
-}
-
-.services__scroll-box i {
-    font-size: 24px;
-    color: #ffffff; /* Change to your desired color */
-    display: inline-block;
-    vertical-align: middle;
-    animation: scroll-down 3s infinite;
+.services__card:hover .services__description {
+    transform: translateY(0); /* Show the description on hover */
+    opacity: 1; /* Show the description on hover */
 }
 
 /* Responsive adjustments for smaller screens */
