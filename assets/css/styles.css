@@ -514,7 +514,7 @@ transition: box-shadow .4s;
 .home__social {
   position: absolute;
   right: 1rem; /* Position it to the right */
-  bottom: 1rem; /* Position it at the bottom */
+  bottom: 10rem; /* Position it at the bottom */
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
