@@ -832,13 +832,7 @@ transition: box-shadow .4s;
 .projects__gallery-container {
   display: flex;
   transition: transform 0.3s ease-in-out;
-  width: max-content; /* Ensure the container can expand to fit all project cards */
-  scrollbar-width: none; /* Hide scrollbar for Firefox */
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-}
-
-.projects__gallery-container::-webkit-scrollbar {
-  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+  width: 100%; /* Ensure the container can expand to fit all project cards */
 }
 
 .projects__gallery-arrow {
@@ -867,6 +861,11 @@ transition: box-shadow .4s;
 
 .projects__gallery-arrow--right {
   right: 1rem;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
 }
 
 .projects__card {

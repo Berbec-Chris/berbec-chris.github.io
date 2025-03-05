@@ -13,6 +13,9 @@
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
 
+      <!-- Swiper CSS -->
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
       <title>Portfolio Website Christophe</title>
    </head>
    <body>
@@ -216,12 +219,9 @@
             <h2 class="section__title-3" style="text-align: center; width: 100%;">
                <span>Projects</span>
             </h2>
-            <div class="projects__gallery">
-                <button class="projects__gallery-arrow projects__gallery-arrow--left" id="gallery-arrow-left">
-                    <i class="ri-arrow-left-s-line"></i>
-                </button>
-                <div class="projects__gallery-container" id="projects-gallery-container">
-                    <article class="projects__card projects__card--hover">
+            <div class="swiper-container projects__gallery">
+                <div class="swiper-wrapper projects__gallery-container">
+                    <article class="swiper-slide projects__card projects__card--hover">
                         <div class="projects__image">
                             <img src="assets/img/project-1.jpg" alt="image" class="projects__img">
                             <a href="https://berbec-chris.github.io/assets/pages/project-1-page.pdf" target="_blank" class="projects__button button">
@@ -242,7 +242,7 @@
                         </div>
                     </article>
         
-                    <article class="projects__card projects__card--hover">
+                    <article class="swiper-slide projects__card projects__card--hover">
                         <div class="projects__image">
                             <img src="assets/img/project-2.jpg" alt="image" class="projects__img">
                             <a href="https://berbec-chris.github.io/assets/pages/project-2-page.pdf" target="_blank" class="projects__button button">
@@ -263,7 +263,7 @@
                         </div>
                     </article>
         
-                    <article class="projects__card projects__card--hover">
+                    <article class="swiper-slide projects__card projects__card--hover">
                         <div class="projects__image">
                             <img src="assets/img/project-3.jpg" alt="image" class="projects__img">
                             <a href="https://berbec-chris.github.io/assets/pages/project-3-page.pdf" target="_blank" class="projects__button button">
@@ -286,7 +286,7 @@
                         </div>
                     </article>
         
-                    <article class="projects__card projects__card--hover">
+                    <article class="swiper-slide projects__card projects__card--hover">
                         <div class="projects__image">
                             <img src="assets/img/project-4.jpg" alt="image" class="projects__img">
                             <a href="https://berbec-chris.github.io/assets/pages/project-4-page.pdf" target="_blank" class="projects__button button">
@@ -310,7 +310,7 @@
                         </div>
                     </article>
         
-                    <article class="projects__card projects__card--hover">
+                    <article class="swiper-slide projects__card projects__card--hover">
                         <div class="projects__image">
                             <img src="assets/img/project-5.jpg" alt="image" class="projects__img">
                             <a href="https://berbec-chris.github.io/assets/pages/project-5-page.pdf" target="_blank" class="projects__button button">
@@ -331,7 +331,7 @@
                         </div>
                     </article>
         
-                    <article class="projects__card projects__card--hover">
+                    <article class="swiper-slide projects__card projects__card--hover">
                         <div class="projects__image">
                             <img src="assets/img/project-6.jpg" alt="image" class="projects__img">
                             <a href="https://berbec-chris.github.io/assets/pages/project-6-page.pdf" target="_blank" class="projects__button button">
@@ -353,9 +353,9 @@
                         </div>
                     </article>
                 </div>
-                <button class="projects__gallery-arrow projects__gallery-arrow--right" id="gallery-arrow-right">
-                    <i class="ri-arrow-right-s-line"></i>
-                </button>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next projects__gallery-arrow projects__gallery-arrow--right"></div>
+                <div class="swiper-button-prev projects__gallery-arrow projects__gallery-arrow--left"></div>
             </div>
          </section>
 
@@ -407,6 +407,9 @@
       <!--=============== SCROLLREVEAL ===============-->
       <script src="https://unpkg.com/scrollreveal"></script>
       
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
    </body>

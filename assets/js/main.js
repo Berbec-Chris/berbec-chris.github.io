@@ -110,54 +110,57 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch('assets/data/projects.json')
         .then(response => response.json())
         .then(data => {
-            const projectsContainer = document.querySelector('.projects__container');
-            projectsContainer.innerHTML = data.projects.map(project => `
-                <article class="projects__card">
-                    <div class="projects__image">
-                        <img src="${project.image}" alt="image" class="projects__img">
-                        <a href="${project.link}" target="_blank" class="projects__button button">
-                            <i class="ri-arrow-right-up-line"></i>
-                        </a>
-                    </div>
-                    <div class="projects__content">
-                        <h3 class="projects__subtitle" style="text-align: center;">${project.subtitle}</h3>
-                        <h2 class="projects__title" style="text-align: center;">${project.title}</h2>
-                        <p class="projects__description">${project.description}</p>
-                    </div>
-                    <div class="projects__buttons">
-                        <a href="${project.github}" target="_blank" class="projects__link">
-                            <i class="ri-github-line"></i>
-                        </a>
-                    </div>
-                </article>
-            `).join('');
-            sr.reveal('.projects__card', { interval: 200 });
+            const projectsContainer = document.querySelector('.swiper-wrapper.projects__gallery-container');
+            if (projectsContainer) {
+                projectsContainer.innerHTML = data.projects.map(project => `
+                    <article class="swiper-slide projects__card projects__card--hover">
+                        <div class="projects__image">
+                            <img src="${project.image}" alt="image" class="projects__img">
+                            <a href="${project.link}" target="_blank" class="projects__button button">
+                                <i class="ri-arrow-right-up-line"></i>
+                            </a>
+                        </div>
+                        <div class="projects__content">
+                            <h3 class="projects__subtitle" style="text-align: center;">${project.subtitle}</h3>
+                            <h2 class="projects__title" style="text-align: center;">${project.title}</h2>
+                            <p class="projects__description">${project.description}</p>
+                        </div>
+                        <div class="projects__buttons">
+                            <a href="${project.github}" target="_blank" class="projects__link">
+                                <i class="ri-github-line"></i>
+                            </a>
+                        </div>
+                    </article>
+                `).join('');
+                sr.reveal('.projects__card', { interval: 200 });
+            } else {
+                console.error('Projects container not found');
+            }
+        }).catch(error => {
+            console.error('Error loading projects:', error);
         });
 
-    // Gallery sliding functionality
-    const galleryContainer = document.querySelector('.projects__gallery-container');
-    const galleryArrowLeft = document.querySelector('.projects__gallery-arrow--left');
-    const galleryArrowRight = document.querySelector('.projects__gallery-arrow--right');
-
-    let scrollAmount = 0;
-    const scrollStep = 900; // Slide 3 cards at a time (300px each)
-
-    galleryArrowLeft.addEventListener('click', () => {
-        scrollAmount -= scrollStep;
-        if (scrollAmount < 0) scrollAmount = 0;
-        galleryContainer.scrollTo({
-            left: scrollAmount,
-            behavior: 'smooth'
-        });
-    });
-
-    galleryArrowRight.addEventListener('click', () => {
-        const maxScroll = galleryContainer.scrollWidth - galleryContainer.clientWidth;
-        scrollAmount += scrollStep;
-        if (scrollAmount > maxScroll) scrollAmount = maxScroll;
-        galleryContainer.scrollTo({
-            left: scrollAmount,
-            behavior: 'smooth'
-        });
+    // Initialize Swiper
+    const swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+        },
     });
 });
