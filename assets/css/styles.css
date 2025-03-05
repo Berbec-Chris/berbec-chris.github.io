@@ -738,7 +738,7 @@ transition: box-shadow .4s;
 
 /*=============== SERVICES ===============*/
 .services {
-    padding: 4rem 0;
+    padding: 2rem 0;
     background-color: var(--body-color);
     transition: background-color 0.4s;
     height: 100vh; /* Ensure the section takes full height of the viewport */
@@ -749,15 +749,16 @@ transition: box-shadow .4s;
 
 .services__container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 1rem;
     align-items: start;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .services__card {
     background-color: var(--white-color);
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -770,19 +771,19 @@ transition: box-shadow .4s;
 }
 
 .services__icon {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--first-color);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .services__title {
-    font-size: var(--h3-font-size);
-    margin-bottom: 0.75rem;
+    font-size: var(--normal-font-size);
+    margin-bottom: 0.5rem;
     color: var(--title-color);
 }
 
 .services__description {
-    font-size: var(--normal-font-size);
+    font-size: var(--small-font-size);
     color: var(--text-color);
 }
 
@@ -810,6 +811,21 @@ transition: box-shadow .4s;
     display: inline-block;
     vertical-align: middle;
     animation: scroll-down 3s infinite;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .services__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .services__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 }
 
 /*=============== PROJECTS ===============*/
