@@ -788,9 +788,12 @@ transition: box-shadow .4s;
 .projects__card {
   position: relative;
   overflow: hidden;
+  padding: 10px;
+  background-color: var(--container-color);
   transition: transform 0.3s, box-shadow 0.3s;
   width: 300px;
   flex-shrink: 0;
+  border-radius: 4px;
 }
 
 .projects__card:hover {
