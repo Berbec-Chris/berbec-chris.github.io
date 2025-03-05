@@ -741,6 +741,10 @@ transition: box-shadow .4s;
     padding: 4rem 0;
     background-color: var(--body-color);
     transition: background-color 0.4s;
+    height: 100vh; /* Ensure the section takes full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
 }
 
 .services__container {
@@ -783,29 +787,29 @@ transition: box-shadow .4s;
 }
 
 .services__scroll {
-  display: block;
-  width: max-content;
-  margin: 0 auto; /* Center the button */
-  margin-top: auto; /* Push scroll button to the bottom */
+    display: block;
+    width: max-content;
+    margin: 0 auto; /* Center the button */
+    margin-top: auto; /* Push scroll button to the bottom */
 }
 
 .services__scroll-box {
-  background-color: var(--black-color);
-  width: 36px;
-  height: 36px;
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-  overflow: hidden;
-  transition: background-color .4s;
+    background-color: var(--black-color);
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color .4s;
 }
 
 .services__scroll-box i {
-  font-size: 24px;
-  color: #ffffff; /* Change to your desired color */
-  display: inline-block;
-  vertical-align: middle;
-  animation: scroll-down 3s infinite;
+    font-size: 24px;
+    color: #ffffff; /* Change to your desired color */
+    display: inline-block;
+    vertical-align: middle;
+    animation: scroll-down 3s infinite;
 }
 
 /*=============== PROJECTS ===============*/
