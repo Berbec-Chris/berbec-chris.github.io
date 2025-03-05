@@ -135,9 +135,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
     // Gallery sliding functionality
-    const galleryContainer = document.getElementById('projects-gallery-container');
-    const galleryArrowLeft = document.getElementById('gallery-arrow-left');
-    const galleryArrowRight = document.getElementById('gallery-arrow-right');
+    const galleryContainer = document.querySelector('.projects__gallery-container');
+    const galleryArrowLeft = document.querySelector('.projects__gallery-arrow--left');
+    const galleryArrowRight = document.querySelector('.projects__gallery-arrow--right');
 
     let scrollAmount = 0;
     const scrollStep = 900; // Slide 3 cards at a time (300px each)
