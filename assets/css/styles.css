@@ -748,23 +748,54 @@ transition: box-shadow .4s;
 
 .projects__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3x2 grid */
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   align-items: start;
   padding: 2rem 0;
 }
 
-.project__card {
-  padding: 1.5rem;
-  background-color: var(--white-color);
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+.projects__gallery {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 2rem 0;
 }
 
-.project__card:hover {
+.projects__gallery-container {
+  display: inline-flex;
+  gap: 2rem;
+}
+
+.projects__card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.projects__card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projects__description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: var(--white-color);
+  padding: 1rem;
+  box-sizing: border-box;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out, opacity 0.3s;
+  opacity: 0;
+}
+
+.projects__card--hover:hover .projects__description {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .projects__image {
