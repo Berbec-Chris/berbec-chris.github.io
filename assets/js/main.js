@@ -122,4 +122,25 @@ document.addEventListener('DOMContentLoaded', function() {
             `).join('');
             sr.reveal('.projects__card', { interval: 200 });
         });
+
+    // Gallery sliding functionality
+    const galleryContainer = document.getElementById('projects-gallery-container');
+    const galleryArrowLeft = document.getElementById('gallery-arrow-left');
+    const galleryArrowRight = document.getElementById('gallery-arrow-right');
+
+    let scrollAmount = 0;
+    const scrollStep = 300;
+
+    galleryArrowLeft.addEventListener('click', () => {
+        scrollAmount -= scrollStep;
+        if (scrollAmount < 0) scrollAmount = 0;
+        galleryContainer.style.transform = `translateX(-${scrollAmount}px)`;
+    });
+
+    galleryArrowRight.addEventListener('click', () => {
+        const maxScroll = galleryContainer.scrollWidth - galleryContainer.clientWidth;
+        scrollAmount += scrollStep;
+        if (scrollAmount > maxScroll) scrollAmount = maxScroll;
+        galleryContainer.style.transform = `translateX(-${scrollAmount}px)`;
+    });
 });
