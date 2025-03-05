@@ -737,7 +737,50 @@ transition: box-shadow .4s;
 }
 
 /*=============== SERVICES ===============*/
+.services {
+    padding: 4rem 0;
+    background-color: var(--body-color);
+    transition: background-color 0.4s;
+}
 
+.services__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: start;
+    padding: 2rem 0;
+}
+
+.services__card {
+    background-color: var(--white-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.services__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.services__icon {
+    font-size: 2rem;
+    color: var(--first-color);
+    margin-bottom: 1rem;
+}
+
+.services__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: 0.75rem;
+    color: var(--title-color);
+}
+
+.services__description {
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+}
 
 /*=============== PROJECTS ===============*/
 .projects {
