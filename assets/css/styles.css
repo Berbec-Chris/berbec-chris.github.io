@@ -764,6 +764,11 @@ transition: box-shadow .4s;
   display: flex;
   transition: transform 0.3s ease-in-out;
   width: max-content; /* Ensure the container can expand to fit all project cards */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.projects__gallery-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
 }
 
 .projects__gallery-arrow {
@@ -773,17 +778,25 @@ transition: box-shadow .4s;
   background-color: var(--black-color);
   color: var(--white-color);
   border: none;
-  padding: 0.5rem;
+  padding: 0.75rem;
   cursor: pointer;
   z-index: 10;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.projects__gallery-arrow:hover {
+  background-color: var(--first-color);
+  transform: scale(1.1);
 }
 
 .projects__gallery-arrow--left {
-  left: 0;
+  left: 1rem;
 }
 
 .projects__gallery-arrow--right {
-  right: 0;
+  right: 1rem;
 }
 
 .projects__card {
@@ -793,6 +806,8 @@ transition: box-shadow .4s;
   width: 300px;
   flex-shrink: 0;
   margin-right: 1rem; /* Add margin between cards */
+  border-radius: 8px;
+  background-color: var(--white-color);
 }
 
 .projects__card:hover {

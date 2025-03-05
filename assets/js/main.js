@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const galleryArrowRight = document.getElementById('gallery-arrow-right');
 
     let scrollAmount = 0;
-    const scrollStep = 300;
+    const scrollStep = 900; // Slide 3 cards at a time (300px each)
 
     galleryArrowLeft.addEventListener('click', () => {
         scrollAmount -= scrollStep;
