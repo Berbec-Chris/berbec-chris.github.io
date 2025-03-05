@@ -834,6 +834,7 @@ transition: box-shadow .4s;
   transition: transform 0.3s ease-in-out;
   width: max-content; /* Ensure the container can expand to fit all project cards */
   scrollbar-width: none; /* Hide scrollbar for Firefox */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 .projects__gallery-container::-webkit-scrollbar {

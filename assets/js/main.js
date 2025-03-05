@@ -145,13 +145,19 @@ document.addEventListener('DOMContentLoaded', function() {
     galleryArrowLeft.addEventListener('click', () => {
         scrollAmount -= scrollStep;
         if (scrollAmount < 0) scrollAmount = 0;
-        galleryContainer.style.transform = `translateX(-${scrollAmount}px)`;
+        galleryContainer.scrollTo({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
     });
 
     galleryArrowRight.addEventListener('click', () => {
         const maxScroll = galleryContainer.scrollWidth - galleryContainer.clientWidth;
         scrollAmount += scrollStep;
         if (scrollAmount > maxScroll) scrollAmount = maxScroll;
-        galleryContainer.style.transform = `translateX(-${scrollAmount}px)`;
+        galleryContainer.scrollTo({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
     });
 });
