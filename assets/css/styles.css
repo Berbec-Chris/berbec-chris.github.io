@@ -833,6 +833,7 @@ transition: box-shadow .4s;
   padding: 4rem 0;
   background-color: var(--body-color);
   transition: background-color .4s;
+  position: relative;
 }
 
 .projects__container {
