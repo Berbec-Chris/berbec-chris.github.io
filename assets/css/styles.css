@@ -10,11 +10,11 @@
   --first-color: hsl(14, 98%, 50%);
   --black-color: hsl(0, 0%, 0%);
   --black-color-light: hsl(0, 0%, 40%);
-  --white-color: hsl(0, 0%, 95%);
+  --white-color: hsl(0, 0%, 99%);
   --title-color: hsl(0, 0%, 0%);
   --text-color: hsl(0, 0%, 35%);
   --text-color-light: hsl(0, 0%, 64%);
-  --body-color: hsl(0, 0%, 75%);
+  --body-color: hsl(0, 0%, 95%);
   --container-color: hsl(0, 0%, 83%);
 
   /*========== Font and typography ==========*/
@@ -262,7 +262,14 @@ transition: box-shadow .4s;
   .nav__list-desktop {
     display: -webkit-inline-box;
     gap: 1rem;
-}
+  }
+  .nav__link{
+  position: relative;
+  color: var(--black-color-light);
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semi-bold);
+  transition: color .3s;
+  }
 }
 
 
@@ -304,6 +311,13 @@ transition: box-shadow .4s;
     display: flex;
     flex-direction: column;
     row-gap: 2.5rem;
+  }
+  .nav__link{
+    position: relative;
+    color: var(--white-color);
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    transition: color .3s;
   }
 }
 
@@ -349,20 +363,12 @@ transition: box-shadow .4s;
   flex-direction: column;
   row-gap: 2.5rem;
 }
-
-.nav__link{
-  position: relative;
-  color: var(--white-color);
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-semi-bold);
-  transition: color .3s;
-}
  
 .nav__link::after{
   content: '';
   width: 25%;
   height: 2px;
-  background-color: var(--white-color);
+  background-color: var(--first-color-light);
   position: absolute;
   left: 0;
   bottom: -.5rem;
@@ -370,7 +376,7 @@ transition: box-shadow .4s;
 }
 
 .nav__link:hover{
-  color: var(--white-color);
+  color: var(--first-color);
 }
 
 .nav__link:hover::after{
