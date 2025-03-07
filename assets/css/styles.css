@@ -826,14 +826,11 @@ transition: box-shadow .4s;
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
-}
-
-@media screen and (max-width: 480px) {
-    .services__container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+    .services__description{
+      display: none;
     }
 }
+
 
 /*=============== PROJECTS ===============*/
 
@@ -888,6 +885,12 @@ transition: box-shadow .4s;
 .swiper-pagination-bullet-active {
   opacity: var(--swiper-pagination-bullet-opacity, 1);
   background: var(--first-color) !important;
+}
+
+@media screen and (max-width: 768px) {
+  .projects__description{
+    display: none;
+  }
 }
 
 /*.projects__container {
