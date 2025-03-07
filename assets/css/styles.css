@@ -829,7 +829,13 @@ transition: box-shadow .4s;
 }
 
 /*=============== PROJECTS ===============*/
-.projects {
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+/*.projects {
   padding: 4rem 0;
   background-color: var(--body-color);
   transition: background-color .4s;
@@ -844,7 +850,7 @@ transition: box-shadow .4s;
   padding: 2rem 0;
 }
 
-.projects__gallery {
+/*.projects__gallery {
   overflow: hidden;
   padding: 2rem 0;
 }
@@ -860,7 +866,7 @@ transition: box-shadow .4s;
   background-color: var(--white-color);
   border-radius: 8px;
   flex: 1 0 30%; /* Adjust the width of the cards */
-  box-sizing: border-box;
+  /*box-sizing: border-box;
 }
 
 .projects__card:hover {
@@ -994,14 +1000,14 @@ transition: box-shadow .4s;
 @media screen and (max-width: 1024px) {
   .projects__card {
     flex: 1 0 45%; /* Adjust the width of the cards for medium screens */
-  }
+  /*}
 }
 
 @media screen and (max-width: 768px) {
   .projects__card {
     flex: 1 0 100%; /* Adjust the width of the cards for small screens */
-  }
-}
+  /*}
+}*/
 
 /*=============== CONTACT ===============*/
 .contact {
