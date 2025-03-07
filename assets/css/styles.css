@@ -1191,7 +1191,7 @@ transition: box-shadow .4s;
 
 .contact__placeholder {
     margin-bottom: 1.5rem;
-    font-size: var(--normal-font-size);
+    font-size: var(--h3-font-size);
     color: var(--text-color-light);
 }
 
