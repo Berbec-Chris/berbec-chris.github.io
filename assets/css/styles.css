@@ -865,12 +865,10 @@ transition: box-shadow .4s;
 .swiper-button-prev{
   color: var(--first-color);
   background-color: var(--container-color);
-  padding-block: 100vh;
 }
 .swiper-button-next{
   color: var(--first-color);
   background-color: var(--container-color);
-  padding-block: 100vh;
 }
 
 
