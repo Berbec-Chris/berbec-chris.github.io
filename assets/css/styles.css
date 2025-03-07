@@ -848,7 +848,7 @@ transition: box-shadow .4s;
 
 .swiper-slide {
   text-align: center;
-  font-size: var(--normal-font-size);
+  font-size: var(--small-font-size);
   background: #fff;
   display: flex;
   justify-content: center;
