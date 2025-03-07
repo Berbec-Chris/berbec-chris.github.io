@@ -106,8 +106,30 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Load Projects Dynamically
-    fetch('assets/data/projects.json')
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: false,
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+
+   // Load Projects Dynamically
+    /*fetch('assets/data/projects.json')
         .then(response => response.json())
         .then(data => {
             const projectsContainer = document.querySelector('.swiper-wrapper.projects__gallery-container');
@@ -139,9 +161,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }).catch(error => {
             console.error('Error loading projects:', error);
         });
-
+*/
     // Initialize Swiper
-    const swiper = new Swiper('.swiper-container', {
+    /*const swiper = new Swiper('.swiper-container', {
         slidesPerView: 3,
         spaceBetween: 30,
         navigation: {
@@ -162,5 +184,5 @@ document.addEventListener('DOMContentLoaded', function() {
                 spaceBetween: 30,
             },
         },
-    });
+    });*/
 });
