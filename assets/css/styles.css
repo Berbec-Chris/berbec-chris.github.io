@@ -824,7 +824,10 @@ transition: box-shadow .4s;
 @media screen and (max-width: 768px) {
     .services__container {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        gap: 0.5rem;
+    }
+    .services__title{
+      font-size: var(--smaller-font-size);
     }
     .services__description{
       display: none;
