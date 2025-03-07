@@ -112,8 +112,12 @@ document.addEventListener('DOMContentLoaded', function() {
         loop: false,
       
         // If we need pagination
+        slidesPerView: 3,
+        spaceBetween: 30,
+
         pagination: {
           el: '.swiper-pagination',
+          clickable: true,
         },
       
         // Navigation arrows
