@@ -840,7 +840,7 @@ transition: box-shadow .4s;
 
 .swiper {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .swiper-wrapper {
@@ -849,7 +849,7 @@ transition: box-shadow .4s;
 
 .swiper-slide {
   text-align: center;
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
   background: #fff;
   display: flex;
   justify-content: center;
@@ -861,6 +861,15 @@ transition: box-shadow .4s;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.swiper-slide,
+.swiper-slide img{
+  border-radius: 10px;
+}
+
+.projects__content{
+  padding: 10px
 }
 
 .swiper-button-prev{
