@@ -839,12 +839,16 @@ transition: box-shadow .4s;
 
 .swiper {
   width: 100%;
-  height: 60%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  display: flex;
 }
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size: var(--normal-font-size);
   background: #fff;
   display: flex;
   justify-content: center;
