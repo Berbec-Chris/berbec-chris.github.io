@@ -416,6 +416,7 @@ transition: box-shadow .4s;
   align-items: center;
   flex-direction: column;
   height: 100%; /* Ensure containers take full height of the section */
+  position: relative;
 }
 
 .home__name {
@@ -441,8 +442,11 @@ transition: box-shadow .4s;
 
 /* Home prefill */
 .home__prefill {
-  position: relative;
-  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%; /* Adjust the width as needed */
   max-width: 1920px; /* Match the body's max width */
   margin: 0 auto; /* Center the element */
   display: flex;
@@ -452,7 +456,7 @@ transition: box-shadow .4s;
 /* Home image */
 .home__image {
   position: relative;
-  width: 15%; /* Adjust the width as needed */
+  width: 100%; /* Adjust the width as needed */
 }
 
 /* Home image properties */
@@ -552,14 +556,14 @@ transition: box-shadow .4s;
 }
 
 .home__info{
-  margin-top: 4rem;
+  margin-top: 2rem;
+  text-align: center;
 }
 
 .home__description{
   text-align: center;
   color: var(--title-color);
-  margin-bottom: 1.5rem;
-  margin-bottom: 1rem; /* Add bottom margin */
+  margin-bottom: 2rem;
 }
 
 .home__description b{
@@ -584,10 +588,11 @@ transition: box-shadow .4s;
 }
 
 .home__scroll{
+  position: absolute;
+  bottom: 2rem;
   display: block;
   width: max-content;
   margin: 0 auto;
-  margin-top: auto; /* Push scroll button to the bottom */
 }
 
 .home__scroll-box i{
