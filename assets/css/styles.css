@@ -834,6 +834,7 @@ transition: box-shadow .4s;
   background-color: var(--body-color);
   transition: background-color .4s;
   position: relative;
+  height: auto;
 }
 
 .swiper {
@@ -852,6 +853,7 @@ transition: box-shadow .4s;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: auto;
 }
 
 .swiper-slide img {
