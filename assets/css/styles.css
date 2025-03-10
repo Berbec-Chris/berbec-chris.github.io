@@ -137,7 +137,7 @@ img {
   position: relative;
   font-size: var(--h1-font-size);
   width: max-content;
-  margin: .75rem auto 2rem;
+  margin: auto;
 }
 
 .section__title-1 span, 
