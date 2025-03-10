@@ -472,17 +472,7 @@ transition: box-shadow .4s;
 }
 
 @media screen and (max-width: 768px){
-  .home__image {
-    width: 60%; /* Ensure the image takes the full width of the container */
-    left: -5%; /* Reset the left position */
-  }
 
-  .home__shadow {
-    width: 100%;
-    height: 100%;
-    bottom: 5%; /* Adjust the bottom position */
-    right: 5%; /* Adjust the right position */
-  }
 }
 
 
@@ -537,7 +527,6 @@ transition: box-shadow .4s;
 @media screen and (max-width: 768px) {
   .home__social {
     position: static; /* Reset position for mobile */
-    margin-top: 2rem; /* Add margin for spacing */
     flex-direction: row; /* Change to row layout */
     justify-content: center; /* Center the links */
   }
@@ -620,12 +609,7 @@ transition: box-shadow .4s;
   height: 100vh; /* Ensure containers take full height of the section */
 }
 
-@media screen and (max-width: 768px) {
-  .about__container {
-    grid-template-columns: 1fr; /* Stack columns vertically for mobile */
-    height: auto; /* Allow auto height for mobile */
-  }
-}
+
 
 .about__left-column {
     display: flex;
@@ -693,15 +677,16 @@ transition: box-shadow .4s;
     text-align: center;
 }
 
-.section__title-1 {
-    position: absolute;
-    top: 3rem;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 1rem;
-    margin-top: 0; /* Remove top margin */
-    margin-bottom: 1rem; /* Add bottom margin */
+@media screen and (max-width: 768px) {
+  .about__container {
+    grid-template-columns: 1fr; /* Stack columns vertically for mobile */
+    height: auto; /* Allow auto height for mobile */
+  }
+  .about__prefil{
+    width: 59%;
+  }
 }
+
 
 .about__scroll {
   display: block;
