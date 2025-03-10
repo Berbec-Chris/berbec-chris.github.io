@@ -76,6 +76,53 @@ body {
   overflow-y: auto; /* Ensure vertical scrolling */
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 0rem;
+    margin: 0; /* Remove margin to prevent overflow */
+    overflow-x: hidden; /* Ensure no horizontal overflow */
+  }
+  .container {
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+  .nav__list-desktop {
+    display: none;
+  }
+  .nav__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    padding-block: 1.8rem 5rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    transition: top .4s;
+    overflow: hidden;
+  }
+  .show-menu .nav__menu {
+    top: 0; /* Show the menu when active */
+  }
+  .nav__toggle {
+    display: flex;
+  }
+  .nav__list {
+    display: none; /* Hide the mobile nav list by default */
+  }
+  .show-menu .nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
+  .nav__link {
+    position: relative;
+    color: var(--white-color);
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    transition: color .3s;
+  }
+}
+
 h1, h2, h3, h4 {
   color: var(--title-color);
   font-weight: var(--font-bold);
@@ -274,7 +321,11 @@ transition: box-shadow .4s;
 @media screen and (max-width: 768px){
   body {
     padding-top: 0rem;
-    margin: 0 1rem; /* Add margin to the body */
+    margin: 0; /* Remove margin to prevent overflow */
+    overflow-x: hidden; /* Ensure no horizontal overflow */
+  }
+  .container {
+    padding: 1rem; /* Adjust padding for smaller screens */
   }
   .nav__list-desktop{
     display: none
@@ -286,13 +337,10 @@ transition: box-shadow .4s;
     width: 100%;
     padding-block: 1.8rem 5rem;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     transition: top .4s;
     overflow: hidden;
-  }
-  .container {
-    padding: 1rem; /* Adjust padding for smaller screens */
   }
   .show-menu .nav__menu {
     top: 0; /* Show the menu when active */
@@ -1159,7 +1207,7 @@ transition: box-shadow .4s;
     display: inline-block;
     padding: 0.75rem 1.5rem;
     background-color: var(--first-color);
-    color: var(--white-color);
+    color: var (--white-color);
     border: none;
     border-radius: 4px;
     font-size: var(--normal-font-size);
