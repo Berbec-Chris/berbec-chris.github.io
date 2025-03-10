@@ -471,11 +471,6 @@ transition: box-shadow .4s;
   transition: background-color .4s;
 }
 
-@media screen and (max-width: 768px){
-
-}
-
-
 /*.home__arrow,*/
 .home__line{
   position: absolute;
@@ -529,6 +524,11 @@ transition: box-shadow .4s;
     position: static; /* Reset position for mobile */
     flex-direction: row; /* Change to row layout */
     justify-content: center; /* Center the links */
+  }
+
+  .home__prefill {
+    transform: translateX(0);
+    width: auto;
   }
 }
 
