@@ -130,7 +130,19 @@ document.addEventListener('DOMContentLoaded', function() {
         scrollbar: {
           el: '.swiper-scrollbar',
         },
-      });
+
+        // Responsive breakpoints
+        breakpoints: {
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+        },
+    });
 
    // Load Projects Dynamically
     /*fetch('assets/data/projects.json')
