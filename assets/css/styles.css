@@ -866,6 +866,8 @@ transition: box-shadow .4s;
     .services__container {
         gap: 0.5rem;
         overflow-x: scroll;
+        max-block-size: fit-content;
+        margin: 1rem 0rem 1rem 1rem;
     }
     .services__title{
       font-size: var(--smaller-font-size);
