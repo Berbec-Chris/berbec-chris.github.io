@@ -415,7 +415,6 @@ transition: box-shadow .4s;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100%; /* Ensure containers take full height of the section */
   position: relative;
 }
 
@@ -442,15 +441,10 @@ transition: box-shadow .4s;
 
 /* Home prefill */
 .home__prefill {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50%; /* Adjust the width as needed */
-  max-width: 1920px; /* Match the body's max width */
-  margin: auto; /* Center the element */
-  display: flex;
-  justify-content: flex-end; /* Align content to the right */
+  position: relative;
+  transform: translateX(150%);
+  width: 24%; /* Adjust the width as needed */
+  margin: 4rem; /* Center the element */
 }
 
 /* Home image */
