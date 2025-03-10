@@ -170,6 +170,7 @@ img {
 .section {
   max-width: 1920px;
   margin: 0 auto;
+  margin-inline: 0.5rem;
   padding-block: 0rem 1.5rem;
   height: 100vh; /* Ensure sections take full height of the viewport */
   display: flex;
@@ -938,6 +939,9 @@ transition: box-shadow .4s;
 @media screen and (max-width: 768px) {
   .projects__description{
     display: none;
+  }
+  .swiper-slide {
+    font-size: var(--smaller-font-size);
   }
 }
 
