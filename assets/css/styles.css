@@ -778,6 +778,23 @@ transition: box-shadow .4s;
     justify-content: center; /* Center content vertically */
 }
 
+@media screen and (max-width: 768px) {
+    .services {
+        height: auto; /* Allow auto height for mobile */
+        min-height: 100vh; /* Ensure the section takes at least the full height of the viewport */
+    }
+    .services__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+    .services__title {
+        font-size: var(--smaller-font-size);
+    }
+    .services__description {
+        display: none;
+    }
+}
+
 .services__container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
