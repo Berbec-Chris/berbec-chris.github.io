@@ -448,7 +448,7 @@ transition: box-shadow .4s;
   transform: translateY(-50%);
   width: 50%; /* Adjust the width as needed */
   max-width: 1920px; /* Match the body's max width */
-  margin: 0 auto; /* Center the element */
+  margin: auto; /* Center the element */
   display: flex;
   justify-content: flex-end; /* Align content to the right */
 }
