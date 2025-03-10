@@ -781,7 +781,6 @@ transition: box-shadow .4s;
 @media screen and (max-width: 768px) {
     .services {
         height: auto; /* Allow auto height for mobile */
-        min-height: 100vh; /* Ensure the section takes at least the full height of the viewport */
     }
     .services__container {
         grid-template-columns: repeat(2, 1fr);
@@ -865,8 +864,8 @@ transition: box-shadow .4s;
 /* Responsive adjustments for smaller screens */
 @media screen and (max-width: 768px) {
     .services__container {
-        grid-template-columns: repeat(2, 1fr);
         gap: 0.5rem;
+        overflow-x: scroll;
     }
     .services__title{
       font-size: var(--smaller-font-size);
