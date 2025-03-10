@@ -133,9 +133,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Responsive breakpoints
         breakpoints: {
-            768: {
+            640: {
                 slidesPerView: 1,
                 spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
             },
             1024: {
                 slidesPerView: 3,
