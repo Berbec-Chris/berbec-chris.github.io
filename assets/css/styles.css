@@ -186,10 +186,6 @@ img {
   top: -5px;
 }
 
-.main {
-  min-height: calc(100vh - var(--header-height)); /* Ensure main content takes full height */
-  overflow: hidden; /* For animation ScrollReveal */
-}
 
 /*=============== HEADER & NAV ===============*/
 .header{
