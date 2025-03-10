@@ -904,7 +904,7 @@ transition: box-shadow .4s;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto;
+  height: auto !important;
 }
 
 .swiper-slide img {
