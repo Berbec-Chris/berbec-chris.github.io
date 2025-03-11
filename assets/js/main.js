@@ -106,6 +106,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Scroll Down Button for Home Section
+    const homeScrollButton = document.querySelector('.home__scroll-box');
+    if (homeScrollButton) {
+        homeScrollButton.addEventListener('click', () => {
+            const nextSection = document.querySelector('#about');
+            if (nextSection) {
+                const offset = nextSection.querySelector('.section__title-2').offsetTop;
+                window.scrollTo({
+                    top: offset - 20, // Adjust this value to ensure the title is fully visible
+                    behavior: 'smooth'
+                });
+            }
+        });
+    }
+
     const swiper = new Swiper('.swiper', {
         // Optional parameters
         direction: 'horizontal',

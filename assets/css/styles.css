@@ -728,6 +728,7 @@ transition: box-shadow .4s;
 .about {
     position: relative;
     text-align: center;
+    max-height: 90vh;
 }
 
 @media screen and (max-width: 768px) {
