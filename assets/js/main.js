@@ -120,48 +120,44 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+    var swiper = new Swiper(".swiper", {
 
-    const swiper = new Swiper('.swiper', {
-        // Optional parameters
         direction: 'horizontal',
         loop: false,
-      
-        // If we need pagination
-        slidesPerView: 3,
-        spaceBetween: 30,
 
+        slidesPerView: 1,
+        spaceBetween: 10,
         pagination: {
-          el: '.swiper-pagination',
+          el: ".swiper-pagination",
           clickable: true,
         },
-      
+
         // Navigation arrows
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
-      
+        
         // And if we need scrollbar
         scrollbar: {
-          el: '.swiper-scrollbar',
-        },
+        el: '.swiper-scrollbar',
+        },          
 
-        // Responsive breakpoints
         breakpoints: {
-            640: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-            },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 30,
-            },
-            1024: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-            },
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
         },
-    });
+      });
 
    // Load Projects Dynamically
     /*fetch('assets/data/projects.json')
