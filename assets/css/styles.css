@@ -456,7 +456,7 @@ transition: box-shadow .4s;
 }
 
 .home__container {
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
