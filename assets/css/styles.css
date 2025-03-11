@@ -888,6 +888,7 @@ transition: box-shadow .4s;
 
 .projects {
   padding: 4rem 0;
+  row-gap: 1rem;
   background-color: var(--body-color);
   transition: background-color .4s;
   position: relative;
