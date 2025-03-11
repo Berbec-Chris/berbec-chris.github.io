@@ -112,11 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
         homeScrollButton.addEventListener('click', () => {
             const nextSection = document.querySelector('#about');
             if (nextSection) {
-                const offset = nextSection.querySelector('.section__title-2').offsetTop;
-                window.scrollTo({
-                    top: offset - 20, // Adjust this value to ensure the title is fully visible
-                    behavior: 'smooth'
-                });
+                nextSection.scrollIntoView({ behavior: 'smooth' });
             }
         });
     }
