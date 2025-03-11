@@ -583,6 +583,7 @@ transition: box-shadow .4s;
 .home__social-text{
   font-size: var(--normal-font-size);
   color: var(--text-color-light);
+  margin-inline-start: 0.5rem;
 }
 
 .home__info{
