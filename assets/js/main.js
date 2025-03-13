@@ -83,6 +83,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     sr.reveal('.home__name, .home__description, .home__scroll, .home__social', { interval: 200 });
     sr.reveal('.about__title, .about__description, .about__list', { interval: 200 });
+
+
     
     // Scroll Down Button for Home Section
     const homeScrollButton = document.querySelector('.home__scroll-box');
@@ -90,16 +92,10 @@ document.addEventListener('DOMContentLoaded', function() {
         homeScrollButton.addEventListener('click', () => {
             const nextSection = document.querySelector('#about');
             if (nextSection) {
-                const headerHeight = document.querySelector('#header').offsetHeight;
-                const offsetPosition = nextSection.offsetTop - headerHeight - 60; // Scroll 60px less
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
+                nextSection.scrollIntoView({ behavior: 'smooth' });
             }
         });
     }
-
     // Scroll Down Button for About Section
     const aboutScrollButton = document.querySelector('.about__scroll-box');
     if (aboutScrollButton) {
