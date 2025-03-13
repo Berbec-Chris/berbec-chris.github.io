@@ -83,6 +83,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
     sr.reveal('.home__name, .home__description, .home__scroll, .home__social', { interval: 200 });
     sr.reveal('.about__title, .about__description, .about__list', { interval: 200 });
+    
+    // Scroll Down Button for Home Section
+    const homeScrollButton = document.querySelector('.home__scroll-box');
+    if (homeScrollButton) {
+        homeScrollButton.addEventListener('click', () => {
+            const nextSection = document.querySelector('#about');
+            if (nextSection) {
+                const headerHeight = document.querySelector('#header').offsetHeight;
+                const offsetPosition = nextSection.offsetTop - headerHeight;
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    }
 
     // Scroll Down Button for About Section
     const aboutScrollButton = document.querySelector('.about__scroll-box');
@@ -106,16 +122,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Scroll Down Button for Home Section
-    const homeScrollButton = document.querySelector('.home__scroll-box');
-    if (homeScrollButton) {
-        homeScrollButton.addEventListener('click', () => {
-            const nextSection = document.querySelector('#about');
-            if (nextSection) {
-                nextSection.scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-    }
     var swiper = new Swiper(".swiper", {
 
         direction: 'horizontal',
@@ -154,62 +160,4 @@ document.addEventListener('DOMContentLoaded', function() {
           },
         },
       });
-
-   // Load Projects Dynamically
-    /*fetch('assets/data/projects.json')
-        .then(response => response.json())
-        .then(data => {
-            const projectsContainer = document.querySelector('.swiper-wrapper.projects__gallery-container');
-            if (projectsContainer) {
-                projectsContainer.innerHTML = data.projects.map(project => `
-                    <article class="swiper-slide projects__card projects__card--hover">
-                        <div class="projects__image">
-                            <img src="${project.image}" alt="image" class="projects__img">
-                            <a href="${project.link}" target="_blank" class="projects__button button">
-                                <i class="ri-arrow-right-up-line"></i>
-                            </a>
-                        </div>
-                        <div class="projects__content">
-                            <h3 class="projects__subtitle" style="text-align: center;">${project.subtitle}</h3>
-                            <h2 class="projects__title" style="text-align: center;">${project.title}</h2>
-                            <p class="projects__description">${project.description}</p>
-                        </div>
-                        <div class="projects__buttons">
-                            <a href="${project.github}" target="_blank" class="projects__link">
-                                <i class="ri-github-line"></i>
-                            </a>
-                        </div>
-                    </article>
-                `).join('');
-                sr.reveal('.projects__card', { interval: 200 });
-            } else {
-                console.error('Projects container not found');
-            }
-        }).catch(error => {
-            console.error('Error loading projects:', error);
-        });
-*/
-    // Initialize Swiper
-    /*const swiper = new Swiper('.swiper-container', {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        breakpoints: {
-            640: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-            },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 30,
-            },
-            1024: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-            },
-        },
-    });*/
 });

@@ -246,6 +246,7 @@ left: 0;
 background-image: linear-gradient(180deg, var(--body-color), 90%, hsl(0, 0%, 75%, 0));
 z-index: var(--z-fixed);
 transition: box-shadow .4s;
+height: var(--header-height); /* Ensure the header height is set */
 }
 
 .nav {
