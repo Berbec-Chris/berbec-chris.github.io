@@ -661,7 +661,6 @@ height: var(--header-height); /* Ensure the header height is set */
   grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
   gap: 2rem;
   align-items: center;
-  height: 100vh; /* Ensure containers take full height of the section */
 }
 
 
