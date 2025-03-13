@@ -88,10 +88,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const homeScrollButton = document.querySelector('.home__scroll-box');
     if (homeScrollButton) {
         homeScrollButton.addEventListener('click', () => {
-            const nextSection = document.querySelector('.section__title-2');
+            const nextSection = document.querySelector('#about');
             if (nextSection) {
                 const headerHeight = document.querySelector('#header').offsetHeight;
-                const offsetPosition = nextSection.offsetTop - headerHeight;
+                const offsetPosition = nextSection.offsetTop - headerHeight - 60; // Scroll 60px less
                 window.scrollTo({
                     top: offsetPosition,
                     behavior: 'smooth'
