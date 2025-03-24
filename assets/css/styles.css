@@ -914,6 +914,7 @@ height: var(--header-height); /* Ensure the header height is set */
   justify-content: center;
   align-items: center;
   height: auto !important;
+  padding-block-end: 1rem;
 }
 
 .swiper-slide img {
