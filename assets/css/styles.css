@@ -940,10 +940,15 @@ height: var(--header-height); /* Ensure the header height is set */
 }
 
 .projects__button{
+  color: var(--white-color) !important;
   position: relative;
   background-color: var(--black-color);
   padding: 0.5rem;
   border-radius: 10%;
+}
+
+.projects__button:hover{
+  background-color: var(--first-color);
 }
 
 
