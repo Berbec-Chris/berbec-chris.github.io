@@ -933,6 +933,14 @@ height: var(--header-height); /* Ensure the header height is set */
   padding: 10px
 }
 
+.projects__title{
+  
+}
+
+.projects__subtitle{
+
+}
+
 .projects__buttons{
   display: inline;
   align-items: end;
