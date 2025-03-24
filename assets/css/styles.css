@@ -942,6 +942,10 @@ height: var(--header-height); /* Ensure the header height is set */
 
 }
 
+.projects__description{
+  font-size: var(--small-font-size);
+}
+
 .projects__buttons{
   display: inline;
   width: auto;
