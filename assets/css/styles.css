@@ -930,7 +930,8 @@ height: var(--header-height); /* Ensure the header height is set */
 }
 
 .projects__content{
-  padding: 10px
+  padding: 1.25rem;
+  text-align: left;
 }
 
 .projects__title{
@@ -943,7 +944,6 @@ height: var(--header-height); /* Ensure the header height is set */
 
 .projects__buttons{
   display: inline;
-  align-items: end;
   width: auto;
 }
 
@@ -965,6 +965,12 @@ height: var(--header-height); /* Ensure the header height is set */
 }
 .swiper-button-next{
   color: var(--first-color) !important;
+}
+.swiper-button-next.swiper-button-disabled, 
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0 !important;
+  cursor: auto;
+  pointer-events: none;
 }
 
 .swiper-pagination-bullet-active {
