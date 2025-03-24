@@ -932,6 +932,20 @@ height: var(--header-height); /* Ensure the header height is set */
   padding: 10px
 }
 
+.projects__buttons{
+  display: inline;
+  align-items: end;
+  width: auto;
+}
+
+.projects__button{
+  position: relative;
+  background-color: var(--black-color);
+  padding: 0.5rem;
+  border-radius: 10%;
+}
+
+
 .swiper-button-prev{
   color: var(--first-color) !important;
 }
